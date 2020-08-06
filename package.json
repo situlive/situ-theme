@@ -1,5 +1,5 @@
 {
-  "name": "@situlive/situ-fonts",
+  "name": "@situlive/situ-theme",
   "version": "1.0.11",
   "description": "Situ's base theme package for both angular material and bootstrap",
   "main": "index.js",
