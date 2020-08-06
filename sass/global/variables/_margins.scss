@@ -1,0 +1,13 @@
+$margins: 4px,
+8px,
+16px,
+24px,
+32px,
+40px;
+
+$margin-xs: nth($margins, 1);
+$margin-sm: nth($margins, 2);
+$margin-md: nth($margins, 3);
+$margin-lg: nth($margins, 4);
+$margin-xl: nth($margins, 5);
+$margin-xxl: nth($margins, 6);

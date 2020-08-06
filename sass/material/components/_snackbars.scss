@@ -1,0 +1,22 @@
+@import '~@situlive/situ-fonts/sass/variables/colours';
+
+.mat-snack-bar-container {
+  &.warning {
+    background-color: $orange;
+  }
+
+  &.error,
+  &.danger {
+    background-color: $cherry;
+    // background-color: $blush;
+    // background-color: $warm-red;
+  }
+
+  &.success {
+    background-color: $primary;
+  }
+
+  &.info {
+    background-color: $violet;
+  }
+}

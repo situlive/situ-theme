@@ -1,0 +1,110 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+@mixin bodyLight() {
+    font-family: 'SituLiveLight';
+}
+
+@mixin bodyBold() {
+    font-family: 'SituLiveBold';
+}
+
+@mixin titleLight() {
+    font-family: 'EuclidTriangleLight';
+}
+
+@mixin titleLightItalic() {
+    font-family: 'EuclidTriangleLightItalic';
+}
+
+@mixin titleSemiBold() {
+    font-family: 'EuclidTriangleSemiBold';
+}
+
+@mixin titleSemiBoldItalic() {
+    font-family: 'EuclidTriangleSemiBoldItalic';
+}
+
+@mixin body {
+    @include bodyLight;
+    @include fontSize($font-sizes);
+}
+
+@mixin headerOne() {
+    @include titleSemiBold;
+    @include fontSize($h1-sizes);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin headerTwo() {
+    @include titleSemiBold;
+    @include fontSize($h2-sizes);
+
+    margin-top: 0;
+    margin-bottom: $margin-lg;
+}
+
+@mixin headerThree {
+    @include titleSemiBold;
+    @include fontSize($h3-sizes);
+
+    margin-top: 0;
+    margin-bottom: $margin-lg;
+}
+
+@mixin headerFour {
+    @include titleSemiBold;
+    @include fontSize($h4-sizes);
+
+    margin-top: 0;
+    margin-bottom: $margin-lg;
+}
+
+@mixin headerFive {
+    @include bodyBold;
+    @include fontSize($h5-sizes);
+
+    margin-top: 0;
+    margin-bottom: $margin-lg;
+}
+
+@mixin headerSix {
+    @include titleSemiBold;
+    @include fontSize($h6-sizes);
+
+    margin-top: 0;
+    margin-bottom: $margin-lg;
+}
+
+@mixin fontSize($sizes) {
+    font-size: map-get($sizes, xs);
+
+    @include media-breakpoint-up(xs) {
+        font-size: map-get($sizes, xs);
+    }
+
+    @include media-breakpoint-up(sm) {
+        font-size: map-get($sizes, sm);
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: map-get($sizes, md);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: map-get($sizes, lg);
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: map-get($sizes, xl);
+    }
+}
+
+@mixin makeGradientText($percent) {
+    background: linear-gradient(to left, $jade $percent, $bright-blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

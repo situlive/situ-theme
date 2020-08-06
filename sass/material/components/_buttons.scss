@@ -1,0 +1,181 @@
+.mat-button-base {
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):focus,
+  &:not(:disabled):not(.disabled):hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled).focus {
+    outline: none !important;
+    box-shadow: none !important;
+    text-decoration: none;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):focus,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled).focus {
+    box-shadow: 0 2px 4px 0 rgba(black, 0.5);
+  }
+}
+
+.mat-button-base:not(.mat-fab):not(.mat-mini-fab) {
+  @include titleSemiBold;
+  border-radius: 25px !important;
+  padding: 0 40px !important;
+  line-height: 47px !important;
+  margin-bottom: $margin-lg !important;
+  text-transform: uppercase;
+
+  &.mat-primary {
+    border: 2px solid $primary;
+    color: white;
+
+    &:disabled,
+    &.disabled,
+    &[disabled] {
+      background-color: rgba($primary, 0.65);
+      border: 2px solid rgba($primary, 0.1);
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: white;
+      color: $primary;
+    }
+  }
+
+  &.mat-secondary {
+    background-color: white;
+    border: 2px solid $primary;
+    color: $primary;
+
+    &:disabled,
+    &.disabled,
+    &[disabled] {
+      background-color: rgba(255, 255, 255, 0.65);
+      border: 2px solid rgba($primary, 0.1) !important;
+      color: rgba($primary, 0.65);
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: $primary;
+      color: white;
+    }
+  }
+
+  &.mat-link {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: $primary;
+
+    &:disabled,
+    &.disabled {
+      background-color: transparent;
+      border: 2px solid transparent;
+      color: $primary;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: transparent;
+      border: 2px solid transparent;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        left: 10px;
+        right: 10px;
+        background-color: $primary;
+        height: 2px;
+        border-radius: 1px;
+
+        @include media-breakpoint-up(xl) {
+          left: 0.75rem;
+          right: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .mat-button-wrapper {
+    display: block;
+    position: relative;
+
+    .mat-icon {
+      position: absolute;
+      left: -25px;
+      top: 50%;
+      margin-top: -11px;
+    }
+  }
+}
+
+.mat-button,
+.mat-raised-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button,
+.nat-fab,
+.mat-mini-fab {
+  @include fontSize($button-sizes);
+}
+
+.mat-primary.btn-inverse:not(.mat-fab):not(.mat-mini-fab) {
+  background-color: white;
+  border-color: white;
+  color: $primary;
+
+  &:disabled,
+  &.disabled {
+    background-color: white;
+    border-color: white;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):focus,
+  &:not(:disabled):not(.disabled):hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled).focus {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.mat-link.btn-inverse:not(.mat-fab) {
+  color: white !important;
+
+  &:disabled,
+  &.disabled {
+    color: white;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):focus,
+  &:not(:disabled):not(.disabled):hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled).focus {
+    &:after {
+      background-color: white;
+    }
+  }
+}
+
+.btn-block:not(.mat-fab):not(.mat-mini-fab) {
+  display: block !important;
+
+  &:not(a) {
+    width: 100%;
+  }
+}

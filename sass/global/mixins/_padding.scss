@@ -1,0 +1,3 @@
+@function get-padding($position, $paddings: $margins) {
+  @return nth($paddings, $position);
+}

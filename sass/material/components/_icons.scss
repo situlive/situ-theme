@@ -1,0 +1,10 @@
+.mat-icon:not(.material-icons) {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    vertical-align: top;
+  }
+}
