@@ -1,0 +1,63 @@
+@mixin situ-core() {
+    body {
+        @include body;
+    }
+
+    h1,
+    .h1 {
+        line-height: 1;
+    }
+
+    h1,
+    .h1 {
+        @include headerOne;
+    }
+
+    h2,
+    .h2 {
+        @include headerTwo;
+    }
+
+    h3,
+    .h3 {
+        @include headerThree;
+    }
+
+    h4,
+    .h4 {
+        @include headerFour;
+    }
+
+    h5,
+    .h5 {
+        @include headerFive;
+    }
+
+    h6,
+    .h6 {
+        @include headerSix;
+    }
+
+    label {
+        @include bodyBold;
+        margin-bottom: $margin-xs;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    ul {
+        @include titleSemiBold;
+    }
+
+    input {
+        @include bodyBold;
+    }
+
+    p {
+        margin-bottom: $margin-lg;
+    }
+
+    .small {
+        @include fontSize($small-sizes);
+    }
+}

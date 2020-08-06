@@ -1,0 +1,50 @@
+$situ-font-path: "/fonts" !default;
+$h1-sizes: (xs: 36px,
+  sm: 36px,
+  md: 90px,
+  lg: 110px,
+  xl: 110px,
+) !default;
+$h2-sizes: (xs: 28px,
+  sm: 28px,
+  md: 28px,
+  lg: 40px,
+  xl: 44px,
+) !default;
+$h3-sizes: (xs: 32px,
+  sm: 32px,
+  md: 32px,
+  lg: 96px,
+  xl: 96px,
+) !default;
+$h4-sizes: (xs: 32px,
+  sm: 32px,
+  md: 32px,
+  lg: 55px,
+  xl: 55px,
+) !default;
+$h5-sizes: (xs: 18px,
+  sm: 18px,
+  md: 18px,
+  lg: 28px,
+  xl: 36px,
+) !default;
+$h6-sizes: (xs: 24px,
+  sm: 24px,
+  md: 16px,
+  lg: 20px,
+  xl: 24px,
+) !default;
+$font-sizes: (xs: 16px,
+  sm: 16px,
+  md: 16px,
+  lg: 18px,
+  xl: 18px,
+) !default;
+$small-sizes: (xs: 14px,
+  sm: 14px,
+  md: 12px,
+  lg: 14px,
+  xl: 14px,
+) !default;
+$button-sizes: $font-sizes !default;

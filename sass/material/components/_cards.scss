@@ -1,0 +1,12 @@
+.mat-card {
+  color: $primary;
+}
+
+.mat-card-content {
+  width: 100%;
+}
+
+.mat-card-header {
+  flex-direction: column !important;
+  margin-bottom: $margin-xxl;
+}

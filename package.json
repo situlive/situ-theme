@@ -1,0 +1,19 @@
+{
+  "name": "@situlive/situ-fonts",
+  "version": "1.0.11",
+  "description": "Situ's base theme package for both angular material and bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/situlive/situ-theme.git"
+  },
+  "author": "r3plica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/situlive/situ-theme/issues"
+  },
+  "homepage": "https://github.com/situlive/situ-theme#readme"
+}
