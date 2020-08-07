@@ -8,16 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This package requires that bootstrap is install
+This package requires that bootstrap and angular material is installed
 
 ```
-npm install --save bootstrap
-```
-
-And if you plan on using angular material, you should install angular material
-
-```
-npm install --save @angular/material
+npm install --save bootstrap-scss @angular/material
 ```
 
 ### Installing
@@ -28,27 +22,13 @@ To install this package, simply run this command
 npm install --save @situlive/situ-theme
 ```
 
-Once this is done, you need to configure your project for either bootstrap or angular material
-
-## Bootstrap only
-
-If you are only running bootstrap, then in your `style.scss` import the boostrap sass file:
+You can then import the theme directly into your application:
 
 ```
-@import "~@situlive/situ-theme/sass/situ-bootstrap-theme";
+@import "~@situlive/situ-theme/sass/situ-theme";
 ```
 
-This will also import the require bootstrap styles.
-
-## Angular material
-
-If you are using angular material, then you need to import the material theme:
-
-```
-@import "~@situlive/situ-theme/sass/situ-material-theme";
-```
-
-This still requires bootstrap, but will only import these bootstrap styles:
+Once imported, it will import and configure angular material and import the unitility styles for bootstrap:
 
 ```
 @import "~bootstrap/scss/functions";
