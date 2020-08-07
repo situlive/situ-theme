@@ -31,12 +31,12 @@ You can then import the theme directly into your application:
 Once imported, it will import and configure angular material and import the unitility styles for bootstrap:
 
 ```
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/utilities";
+@import "~bootstrap-scss/functions";
+@import "~bootstrap-scss/variables";
+@import "~bootstrap-scss/mixins";
+@import "~bootstrap-scss/reboot";
+@import "~bootstrap-scss/grid";
+@import "~bootstrap-scss/utilities";
 ```
 
 Which gives you access to the grid system aswell as the utlity classes like `mb-0` and `d-flex`, etc.

@@ -1,9 +1,9 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/utilities";
+@import "~bootstrap-scss/functions";
+@import "~bootstrap-scss/variables";
+@import "~bootstrap-scss/mixins";
+@import "~bootstrap-scss/reboot";
+@import "~bootstrap-scss/grid";
+@import "~bootstrap-scss/utilities";
 
 @import "./global";
 @import "./material";
@@ -22,10 +22,10 @@ $sxp-theme: mat-light-theme($sxp-primary, $sxp-accent);
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    color: $primary;
+  margin: 0;
+  color: $primary;
 }
