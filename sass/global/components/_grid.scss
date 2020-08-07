@@ -1,0 +1,58 @@
+@include media-breakpoint-up(xl) {
+
+    .container,
+    .container-fluid {
+        padding-left: $grid-gutter-width-lg/2;
+        padding-right: $grid-gutter-width-lg/2;
+
+        >.row:not(.no-gutters) {
+            margin-left: -$grid-gutter-width-lg/2;
+            margin-right: -$grid-gutter-width-lg/2;
+
+            >.col:not(.no-gutters),
+            >[class*='col-']:not(.no-gutters) {
+                padding-left: $grid-gutter-width-lg/2;
+                padding-right: $grid-gutter-width-lg/2;
+            }
+        }
+    }
+
+    form .container,
+    form .container-fluid {
+        padding-left: $grid-gutter-width/2;
+        padding-right: $grid-gutter-width/2;
+
+        >.row:not(.no-gutters) {
+            margin-left: -$grid-gutter-width/2;
+            margin-right: -$grid-gutter-width/2;
+
+            >.col:not(.no-gutters),
+            >[class*='col-']:not(.no-gutters) {
+                padding-left: $grid-gutter-width/2;
+                padding-right: $grid-gutter-width/2;
+            }
+        }
+    }
+
+    .thin-gutters.row:not(.no-gutters) {
+        margin-left: -$grid-gutter-width-lg/4;
+        margin-right: -$grid-gutter-width-lg/4;
+
+        >.col:not(.no-gutters),
+        >[class*='col-']:not(.no-gutters) {
+            padding-left: $grid-gutter-width-lg/4;
+            padding-right: $grid-gutter-width-lg/4;
+        }
+    }
+
+    .ultra-thin-gutters.row:not(.no-gutters) {
+        margin-left: -$grid-gutter-width-lg/8;
+        margin-right: -$grid-gutter-width-lg/8;
+
+        >.col:not(.no-gutters),
+        >[class*='col-']:not(.no-gutters) {
+            padding-left: $grid-gutter-width-lg/8;
+            padding-right: $grid-gutter-width-lg/8;
+        }
+    }
+}

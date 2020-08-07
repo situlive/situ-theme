@@ -1,0 +1,14 @@
+.section {
+    padding-top: $padding-xxl*2;
+    padding-bottom: $padding-xxl*2;
+}
+
+.section-dark {
+    background-color: $blue;
+    color: white;
+}
+
+.section-grey {
+    background-color: $off-white;
+    color: $blue;
+}
