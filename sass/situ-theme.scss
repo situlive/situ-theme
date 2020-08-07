@@ -1,3 +1,7 @@
+$grid-gutter: 20px default;
+$grid-gutter-width: $grid-gutter * 2;
+$grid-gutter-width-lg: $grid-gutter * 10;
+
 @import "~bootstrap-scss/functions";
 @import "~bootstrap-scss/variables";
 @import "~bootstrap-scss/mixins";
