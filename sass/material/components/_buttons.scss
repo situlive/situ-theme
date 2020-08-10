@@ -133,6 +133,18 @@
   @include fontSize($button-sizes);
 }
 
+.mat-fab,
+.mat-mini-fab {
+  border-radius: 50% !important;
+  display: flex;
+
+  .mat-button-wrapper {
+    width: 100%;
+    ;
+    align-self: center;
+  }
+}
+
 .mat-primary.btn-inverse:not(.mat-fab):not(.mat-mini-fab) {
   background-color: white;
   border-color: white;
