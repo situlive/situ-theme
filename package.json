@@ -1,6 +1,6 @@
 {
   "name": "@situlive/situ-theme",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Situ's base theme package for both angular material and bootstrap",
   "main": "index.js",
   "scripts": {

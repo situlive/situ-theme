@@ -1,5 +1,6 @@
 .mat-card {
   color: $primary;
+  padding: $margin-xxl;
 }
 
 .mat-card-content {
@@ -9,4 +10,8 @@
 .mat-card-header {
   flex-direction: column !important;
   margin-bottom: $margin-xxl;
+}
+
+.mat-card-header-text {
+  margin: 0 0;
 }
