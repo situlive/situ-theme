@@ -28,6 +28,7 @@
 
   &.mat-primary {
     border: 2px solid $primary;
+    background-color: $primary;
     color: white;
 
     &:disabled,
@@ -158,7 +159,7 @@
 
   &:disabled,
   &.disabled {
-    color: white;
+    color: white !important;
   }
 
   &:not(:disabled):not(.disabled):active,
@@ -167,7 +168,7 @@
   &:not(:disabled):not(.disabled).active,
   &:not(:disabled):not(.disabled).focus {
     &:after {
-      background-color: white;
+      background-color: white !important;
     }
   }
 }
@@ -177,5 +178,50 @@
 
   &:not(a) {
     width: 100%;
+  }
+}
+
+.section-dark {
+  .mat-primary:not(.mat-fab):not(.mat-mini-fab) {
+    background-color: white;
+    border-color: white;
+    color: $blue;
+
+    &:disabled,
+    &.disabled {
+      background-color: white;
+      border-color: white;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: $primary;
+      color: white;
+    }
+  }
+
+  .mat-primary.btn-inverse:not(.mat-fab):not(.mat-mini-fab) {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+
+    &:disabled,
+    &.disabled {
+      background-color: transparent;
+      border-color: white;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: white;
+      border-color: white;
+      color: $blue;
+    }
   }
 }

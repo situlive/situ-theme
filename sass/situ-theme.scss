@@ -1,11 +1,15 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/utilities";
+@import "./global/variables";
 
-@import "./global";
+@import "~bootstrap-scss/functions";
+@import "~bootstrap-scss/variables";
+@import "~bootstrap-scss/mixins";
+@import "~bootstrap-scss/reboot";
+@import "~bootstrap-scss/grid";
+@import "~bootstrap-scss/images";
+@import "~bootstrap-scss/utilities";
+
+@import './global/mixins';
+@import './global/components';
 @import "./material";
 
 @import "~@angular/material/theming";

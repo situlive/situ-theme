@@ -1,12 +1,20 @@
 .mat-card {
-  color: $primary;
+  @include bodyLight;
+  color: $primary !important;
+  padding: $margin-xxl;
 }
 
-.mat-card-content {
+.mat-card-content,
+.mat-card-subtitle {
   width: 100%;
+  @include fontSize($font-sizes);
 }
 
 .mat-card-header {
   flex-direction: column !important;
   margin-bottom: $margin-xxl;
+}
+
+.mat-card-header-text {
+  margin: 0 0 !important;
 }
