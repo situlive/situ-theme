@@ -4,8 +4,10 @@
   padding: $margin-xxl;
 }
 
-.mat-card-content {
+.mat-card-content,
+.mat-card-subtitle {
   width: 100%;
+  @include fontSize($font-sizes);
 }
 
 .mat-card-header {
