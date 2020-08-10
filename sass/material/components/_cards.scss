@@ -1,4 +1,5 @@
 .mat-card {
+  @include bodyLight;
   color: $primary !important;
   padding: $margin-xxl;
 }
