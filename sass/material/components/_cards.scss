@@ -1,5 +1,5 @@
 .mat-card {
-  color: $primary;
+  color: $primary !important;
   padding: $margin-xxl;
 }
 
@@ -13,5 +13,5 @@
 }
 
 .mat-card-header-text {
-  margin: 0 0;
+  margin: 0 0 !important;
 }
