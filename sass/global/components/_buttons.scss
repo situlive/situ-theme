@@ -1,0 +1,29 @@
+.btn-link {
+  color: white;
+  display: block;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  padding: 0 40px;
+  text-transform: uppercase;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):focus,
+  &:not(:disabled):not(.disabled):hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled).focus {
+    color: white;
+    text-decoration: none;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      left: 40px;
+      right: 40px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: white;
+    }
+  }
+}

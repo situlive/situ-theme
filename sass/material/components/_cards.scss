@@ -1,6 +1,6 @@
 .mat-card {
   @include bodyLight;
-  color: $primary !important;
+  color: $primary;
   padding: $margin-xxl;
 }
 
@@ -11,10 +11,10 @@
 }
 
 .mat-card-header {
-  flex-direction: column !important;
+  flex-direction: column;
   margin-bottom: $margin-xxl;
 }
 
 .mat-card-header-text {
-  margin: 0 0 !important;
+  margin: 0 0;
 }

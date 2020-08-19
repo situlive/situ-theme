@@ -8,11 +8,10 @@
 @import "~bootstrap-scss/images";
 @import "~bootstrap-scss/utilities";
 
+@import "~@angular/material/theming";
 @import './global/mixins';
 @import './global/components';
 @import "./material";
-
-@import "~@angular/material/theming";
 
 @include mat-core();
 
