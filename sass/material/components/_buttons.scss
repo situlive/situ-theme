@@ -1,4 +1,11 @@
 .mat-button-base {
+  display: block !important;
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    display: inline-block !important;
+    width: auto;
+  }
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled):focus,
