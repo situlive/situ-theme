@@ -1,12 +1,19 @@
 .mat-button-base {
+  display: block !important;
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    display: inline-block !important;
+    width: auto;
+  }
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled):focus,
   &:not(:disabled):not(.disabled):hover,
   &:not(:disabled):not(.disabled).active,
   &:not(:disabled):not(.disabled).focus {
-    outline: none !important;
-    box-shadow: none !important;
+    outline: none;
+    box-shadow: none;
     text-decoration: none;
   }
 
@@ -14,16 +21,16 @@
   &:not(:disabled):not(.disabled):focus,
   &:not(:disabled):not(.disabled).active,
   &:not(:disabled):not(.disabled).focus {
-    box-shadow: 0 2px 4px 0 rgba(black, 0.5);
+    box-shadow: none;
   }
 }
 
 .mat-button-base:not(.mat-fab):not(.mat-mini-fab) {
   @include titleSemiBold;
-  border-radius: 25px !important;
-  padding: 0 40px !important;
-  line-height: 47px !important;
-  margin-bottom: $margin-lg !important;
+  border-radius: 25px;
+  padding: 0 40px;
+  line-height: 47px;
+  margin-bottom: $margin-lg;
   text-transform: uppercase;
 
   &.mat-primary {
@@ -36,7 +43,7 @@
     &[disabled] {
       background-color: rgba($primary, 0.65);
       border: 2px solid rgba($primary, 0.1);
-      color: rgba(255, 255, 255, 0.65);
+      color: rgba(white, 0.65);
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -49,16 +56,16 @@
     }
   }
 
-  &.mat-secondary {
-    background-color: white;
+  &.mat-inverse-primary {
     border: 2px solid $primary;
+    background-color: white;
     color: $primary;
 
     &:disabled,
     &.disabled,
     &[disabled] {
-      background-color: rgba(255, 255, 255, 0.65);
-      border: 2px solid rgba($primary, 0.1) !important;
+      border: 2px solid rgba($primary, 0.1);
+      background-color: rgba(white, 0.65);
       color: rgba($primary, 0.65);
     }
 
@@ -67,21 +74,23 @@
     &:not(:disabled):not(.disabled):hover,
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled).focus {
+      border-color: white;
       background-color: $primary;
       color: white;
     }
   }
 
-  &.mat-link {
-    background-color: transparent;
-    border: 2px solid transparent;
+  &.mat-white {
+    background-color: white;
+    border: $primary;
     color: $primary;
 
     &:disabled,
-    &.disabled {
-      background-color: transparent;
-      border: 2px solid transparent;
-      color: $primary;
+    &.disabled,
+    &[disabled] {
+      background-color: rgba(white, 0.65);
+      border: 2px solid rgba($primary, 0.1);
+      color: rgba($primary, 0.65);
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -89,139 +98,114 @@
     &:not(:disabled):not(.disabled):hover,
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled).focus {
-      background-color: transparent;
-      border: 2px solid transparent;
-
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 7px;
-        left: 10px;
-        right: 10px;
-        background-color: $primary;
-        height: 2px;
-        border-radius: 1px;
-
-        @include media-breakpoint-up(xl) {
-          left: 0.75rem;
-          right: 0.75rem;
-        }
-      }
+      background-color: white;
+      color: $primary;
     }
+  }
+
+  &.mat-inverse-white {
+    background-color: $primary;
+    border: 2px solid white;
+    color: white;
+
+    &:disabled,
+    &.disabled,
+    &[disabled] {
+      background-color: rgba($primary, 0.65);
+      border: 2px solid rgba(white, 0.1);
+      color: rgba(white, 0.65);
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: white;
+      color: $primary;
+    }
+  }
+
+  &.mat-transparent-primary {
+    color: $primary;
+    background-color: transparent;
+    border: 2px solid $primary;
+
+    &:disabled,
+    &.disabled {
+      color: $primary;
+      border: 2px solid $primary;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: $primary;
+      border: 2px solid $primary;
+      color: white;
+    }
+  }
+
+  &.mat-transparent-white {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+
+    &:disabled,
+    &.disabled {
+      color: white;
+      border: 2px solid white;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).focus {
+      background-color: white;
+      border: 2px solid white;
+      color: $primary;
+    }
+  }
+
+  .mat-reverse>.mat-button-wrapper {
+    flex-direction: row-reverse;
   }
 
   .mat-button-wrapper {
-    display: block;
-    position: relative;
-
-    .mat-icon {
-      position: absolute;
-      left: -25px;
-      top: 50%;
-      margin-top: -11px;
-    }
+    @include fontSize($font-sizes);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.mat-button,
-.mat-raised-button,
-.mat-icon-button,
-.mat-stroked-button,
-.mat-flat-button,
-.nat-fab,
+.mat-fab,
 .mat-mini-fab {
-  @include fontSize($button-sizes);
-}
+  border-radius: 50%;
+  display: flex;
 
-.mat-primary.btn-inverse:not(.mat-fab):not(.mat-mini-fab) {
-  background-color: white;
-  border-color: white;
-  color: $primary;
-
-  &:disabled,
-  &.disabled {
-    background-color: white;
-    border-color: white;
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled):focus,
-  &:not(:disabled):not(.disabled):hover,
-  &:not(:disabled):not(.disabled).active,
-  &:not(:disabled):not(.disabled).focus {
-    background-color: $primary;
-    color: white;
-  }
-}
-
-.mat-link.btn-inverse:not(.mat-fab) {
-  color: white !important;
-
-  &:disabled,
-  &.disabled {
-    color: white !important;
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled):focus,
-  &:not(:disabled):not(.disabled):hover,
-  &:not(:disabled):not(.disabled).active,
-  &:not(:disabled):not(.disabled).focus {
-    &:after {
-      background-color: white !important;
-    }
+  .mat-button-wrapper {
+    width: 100%;
+    align-self: center;
   }
 }
 
 .btn-block:not(.mat-fab):not(.mat-mini-fab) {
-  display: block !important;
+  display: block;
+
+  .mat-button-wrapper {
+    position: relative;
+
+    .mat-icon {
+      left: -25px;
+      position: absolute;
+    }
+  }
 
   &:not(a) {
     width: 100%;
-  }
-}
-
-.section-dark {
-  .mat-primary:not(.mat-fab):not(.mat-mini-fab) {
-    background-color: white;
-    border-color: white;
-    color: $blue;
-
-    &:disabled,
-    &.disabled {
-      background-color: white;
-      border-color: white;
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      background-color: $primary;
-      color: white;
-    }
-  }
-
-  .mat-primary.btn-inverse:not(.mat-fab):not(.mat-mini-fab) {
-    background-color: transparent;
-    border-color: white;
-    color: white;
-
-    &:disabled,
-    &.disabled {
-      background-color: transparent;
-      border-color: white;
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      background-color: white;
-      border-color: white;
-      color: $blue;
-    }
   }
 }

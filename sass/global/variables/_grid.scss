@@ -1,3 +1,11 @@
 $grid-gutter: 20px !default;
 $grid-gutter-width: $grid-gutter * 2;
+$grid-gutter-width-md: $grid-gutter * 5;
 $grid-gutter-width-lg: $grid-gutter * 10;
+
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1366px);
