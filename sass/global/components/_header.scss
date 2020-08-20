@@ -2,27 +2,40 @@ $header-height: 50px;
 $logo-height: 36px;
 
 .header {
-    &.header-transparent>nav {
-        background-color: transparent !important;
+  &.header-transparent > nav {
+    background-color: transparent !important;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $header-height * 2;
+    z-index: 1000;
+
+    @include media-breakpoint-up(lg) {
+      .col-lg-12 {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .logo {
+    width: 50%;
+
+    @include media-breakpoint-up(sm) {
+      width: auto;
     }
 
-    nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: $header-height * 2;
-        z-index: 1000;
+    > svg {
+      margin: 32px 15px 32px 0;
+      height: $logo-height;
+      width: 100%;
 
-        @include media-breakpoint-up(lg) {
-            .col-lg-12 {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
+      @include media-breakpoint-up(sm) {
+        width: auto;
+      }
     }
-
-    .logo>svg {
-        margin: 32px 15px 32px 0;
-        height: $logo-height;
-    }
+  }
 }
