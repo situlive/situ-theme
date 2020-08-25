@@ -1,9 +1,9 @@
 .mat-button-base:not(.mat-fab):not(.mat-mini-fab) {
-  display: block !important;
+  display: block;
   width: 100%;
 
   @include media-breakpoint-up(sm) {
-    display: inline-block !important;
+    display: inline-block;
     width: auto;
   }
 
@@ -36,7 +36,7 @@
   @include make-buttons("primary", $primary, white);
   @include make-buttons("white", white, $primary);
 
-  .mat-reverse > .mat-button-wrapper {
+  .mat-reverse>.mat-button-wrapper {
     flex-direction: row-reverse;
   }
 
