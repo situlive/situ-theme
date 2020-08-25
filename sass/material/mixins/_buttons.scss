@@ -1,15 +1,15 @@
-@mixin make-buttons($name, $color) {
+@mixin make-buttons($name, $primaryColor, $secondaryColor) {
   &.mat-#{$name} {
-    background-color: $color;
-    border: 2px solid $color;
-    color: white;
+    background-color: $primaryColor;
+    border: 2px solid $primaryColor;
+    color: $secondaryColor;
 
     &:disabled,
     &.disabled,
     &[disabled] {
-      background-color: rgba($color, 0.65);
-      border: 2px solid rgba($color, 0.1);
-      color: rgba(white, 0.65);
+      background-color: rgba($primaryColor, 0.65);
+      border: 2px solid rgba($primaryColor, 0.1);
+      color: rgba($secondaryColor, 0.65);
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -17,22 +17,22 @@
     &:not(:disabled):not(.disabled):hover,
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled).focus {
-      background-color: white;
-      color: $color;
+      background-color: $secondaryColor;
+      color: $primaryColor;
     }
   }
 
   &.mat-inverse-#{$name} {
-    background-color: white;
-    border: 2px solid $color;
-    color: $color;
+    background-color: $secondaryColor;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
 
     &:disabled,
     &.disabled,
     &[disabled] {
-      background-color: rgba(white, 0.65);
-      border: 2px solid rgba($color, 0.1);
-      color: rgba($color, 0.65);
+      background-color: rgba($secondaryColor, 0.65);
+      border: 2px solid rgba($primaryColor, 0.1);
+      color: rgba($primaryColor, 0.65);
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -40,21 +40,21 @@
     &:not(:disabled):not(.disabled):hover,
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled).focus {
-      background-color: $color;
-      border: 2px solid white;
-      color: white;
+      background-color: $primaryColor;
+      border: 2px solid $secondaryColor;
+      color: $secondaryColor;
     }
   }
 
   &.mat-transparent-#{$name} {
     background-color: transparent;
-    border: 2px solid $color;
-    color: $color;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
 
     &:disabled,
     &.disabled {
-      border: 2px solid $color;
-      color: $color;
+      border: 2px solid $primaryColor;
+      color: $primaryColor;
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -62,21 +62,21 @@
     &:not(:disabled):not(.disabled):hover,
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled).focus {
-      background-color: $color;
-      border: 2px solid $color;
-      color: white;
+      background-color: $primaryColor;
+      border: 2px solid $primaryColor;
+      color: $secondaryColor;
     }
   }
 
   &.mat-inverse-transparent-#{$name} {
-    background-color: $color;
-    border: 2px solid $color;
-    color: white;
+    background-color: $primaryColor;
+    border: 2px solid $primaryColor;
+    color: $secondaryColor;
 
     &:disabled,
     &.disabled {
-      border: 2px solid white;
-      color: white;
+      border: 2px solid $secondaryColor;
+      color: $secondaryColor;
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -85,8 +85,8 @@
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled).focus {
       background-color: transparent;
-      border: 2px solid $color;
-      color: $color;
+      border: 2px solid $primaryColor;
+      color: $primaryColor;
     }
   }
 }
