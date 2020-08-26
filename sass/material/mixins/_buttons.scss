@@ -4,12 +4,22 @@
     border: 2px solid $primaryColor;
     color: $secondaryColor;
 
+    .mat-progress-spinner circle,
+    .mat-spinner circle {
+      stroke: $secondaryColor;
+    }
+
     &:disabled,
     &.disabled,
     &[disabled] {
       background-color: rgba($primaryColor, 0.65);
       border: 2px solid rgba($primaryColor, 0.1);
       color: rgba($secondaryColor, 0.65);
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: rgba($secondaryColor, 0.65);
+      }
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -19,6 +29,11 @@
     &:not(:disabled):not(.disabled).focus {
       background-color: $secondaryColor;
       color: $primaryColor;
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: $primaryColor;
+      }
     }
   }
 
@@ -27,12 +42,22 @@
     border: 2px solid $primaryColor;
     color: $primaryColor;
 
+    .mat-progress-spinner circle,
+    .mat-spinner circle {
+      stroke: $primaryColor;
+    }
+
     &:disabled,
     &.disabled,
     &[disabled] {
       background-color: rgba($secondaryColor, 0.65);
       border: 2px solid rgba($primaryColor, 0.1);
       color: rgba($primaryColor, 0.65);
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: rgba($primaryColor, 0.65);
+      }
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -43,6 +68,11 @@
       background-color: $primaryColor;
       border: 2px solid $secondaryColor;
       color: $secondaryColor;
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: $secondaryColor;
+      }
     }
   }
 
@@ -51,10 +81,20 @@
     border: 2px solid $primaryColor;
     color: $primaryColor;
 
+    .mat-progress-spinner circle,
+    .mat-spinner circle {
+      stroke: $primaryColor;
+    }
+
     &:disabled,
     &.disabled {
       border: 2px solid $primaryColor;
       color: $primaryColor;
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: rgba($primaryColor, 0.65);
+      }
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -65,6 +105,11 @@
       background-color: $primaryColor;
       border: 2px solid $primaryColor;
       color: $secondaryColor;
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: $secondaryColor;
+      }
     }
   }
 
@@ -73,10 +118,20 @@
     border: 2px solid $primaryColor;
     color: $secondaryColor;
 
+    .mat-progress-spinner circle,
+    .mat-spinner circle {
+      stroke: $secondaryColor;
+    }
+
     &:disabled,
     &.disabled {
       border: 2px solid $secondaryColor;
       color: $secondaryColor;
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: rgba($secondaryColor, 0.65);
+      }
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -87,6 +142,11 @@
       background-color: transparent;
       border: 2px solid $primaryColor;
       color: $primaryColor;
+
+      .mat-progress-spinner circle,
+      .mat-spinner circle {
+        stroke: $primaryColor;
+      }
     }
   }
 }
