@@ -42,11 +42,6 @@ $logo-height: 36px;
         -webkit-text-fill-color: inherit;
     }
 
-    a {
-        color: white;
-        text-transform: uppercase;
-    }
-
     hr {
         height: 2px;
         background-image: linear-gradient(90deg,
@@ -63,9 +58,10 @@ $logo-height: 36px;
 
     ul {
         li {
-            a {
+            .btn-link {
                 display: inline-block;
                 margin-bottom: 20px;
+                padding: 0;
             }
         }
 
