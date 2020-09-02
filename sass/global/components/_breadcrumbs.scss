@@ -1,0 +1,18 @@
+.breadcrumb {
+    .list-unstyled {
+        padding: 10px 0;
+
+        li+li:before {
+            padding: 8px;
+            content: '/\00a0';
+        }
+
+        .list-unstyled li a {
+            text-decoration: none;
+        }
+
+        .list-unstyled li a:hover {
+            text-decoration: underline;
+        }
+    }
+}
