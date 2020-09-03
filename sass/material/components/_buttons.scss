@@ -1,4 +1,4 @@
-.mat-button-base:not(.mat-fab):not(.mat-mini-fab) {
+.mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
   display: block;
   width: 100%;
 
@@ -25,7 +25,7 @@
   }
 }
 
-.mat-button-base:not(.mat-fab):not(.mat-mini-fab) {
+.mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
   @include titleSemiBold;
   border-radius: 25px;
   padding: 0 40px;
@@ -59,7 +59,7 @@
   }
 }
 
-.btn-block:not(.mat-fab):not(.mat-mini-fab) {
+.btn-block:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
   display: block;
 
   .mat-button-wrapper {
