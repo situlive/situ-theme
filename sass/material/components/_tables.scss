@@ -3,7 +3,20 @@
   background-color: $dark-grey;
 }
 
+.mat-row,
+.mat-header-row {
+  height: 60px;
+}
+
 .mat-header-cell,
 .mat-cell {
   color: white;
+
+  &:first-of-type {
+    padding-left: $padding-md;
+  }
+
+  &:last-of-type {
+    padding-right: $padding-md;
+  }
 }
