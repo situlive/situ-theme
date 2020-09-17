@@ -1,8 +1,5 @@
-$header-height: 50px;
-$logo-height: 36px;
-
 .header {
-  &.header-transparent > nav {
+  &.header-transparent>nav {
     background-color: transparent !important;
   }
 
@@ -10,7 +7,7 @@ $logo-height: 36px;
     position: fixed;
     top: 0;
     width: 100%;
-    height: $header-height * 2;
+    height: $header-height;
     z-index: 1000;
 
     @include media-breakpoint-up(lg) {
@@ -28,7 +25,7 @@ $logo-height: 36px;
       width: auto;
     }
 
-    > svg {
+    >svg {
       margin: 32px 15px 32px 0;
       height: $logo-height;
       width: 100%;

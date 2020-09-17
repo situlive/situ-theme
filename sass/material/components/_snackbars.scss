@@ -1,20 +1,30 @@
 .mat-snack-bar-container {
-  &.warning {
+  display: flex;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+  width: 100%;
+  max-width: 100%;
+  height: $header-height;
+  align-items: center;
+  justify-content: center;
+
+  &.mat-warning {
     background-color: $orange;
   }
 
-  &.error,
-  &.danger {
+  &.mat-error,
+  &.mat-danger {
     background-color: $cherry;
     // background-color: $blush;
     // background-color: $warm-red;
   }
 
-  &.success {
-    background-color: $primary;
+  &.mat-success {
+    background-color: green;
   }
 
-  &.info {
+  &.mat-info {
     background-color: $violet;
   }
 }
