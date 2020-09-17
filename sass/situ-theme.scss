@@ -9,12 +9,12 @@
 @import "~bootstrap-scss/utilities";
 
 @import "~@angular/material/theming";
+
 @import './global/mixins';
 @import './global/components';
+@import "./material";
 
 @include mat-core();
-
-@import "./material";
 
 html {
     scroll-behavior: smooth;
