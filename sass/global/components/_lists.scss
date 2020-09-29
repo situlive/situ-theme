@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
 
   list-style: none;
 }
 
 .list-horizontal {
-  flex-direction: row;
+  flex-direction: row !important;
 }
