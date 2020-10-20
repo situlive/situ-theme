@@ -7,4 +7,10 @@
     > p:last-child {
         margin-bottom: 0;
     }
+
+    a { 
+        margin-top: -$margin-lg;
+        display: block;
+        font-size: smaller;
+    }
 }
