@@ -15,15 +15,25 @@
 
 .section-dark {
     background-color: $blue;
-    color: white;
+    color: $white;
 }
 
 .section-jade {
     background-color: $jade;
-    color: white;
+    color: $white;
+}
+
+.section-off-white {
+    background-color: $off-white;
+    color: $blue;
 }
 
 .section-grey {
-    background-color: $off-white;
+    background-color: $grey;
     color: $blue;
+}
+
+.section-dark-grey {
+    background-color: $dark-grey;
+    color: $white;
 }
