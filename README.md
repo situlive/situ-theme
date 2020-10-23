@@ -41,6 +41,29 @@ Once imported, it will import and configure angular material and import the unit
 
 Which gives you access to the grid system aswell as the utlity classes like `mb-0` and `d-flex`, etc.
 
+### Usage
+
+To use the situ theme, import your variables and overrides first:
+
+```
+@import "./variables";
+
+$situ-font-path: "~@situlive/situ-theme/fonts";
+```
+
+And then import the theme:
+
+```
+@import "~@situlive/situ-theme/sass/situ-theme";
+```
+
+Then you can call the two mixins:
+
+```
+@include create-theme();
+@include core();
+```
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/situlive/situ-theme/tags).

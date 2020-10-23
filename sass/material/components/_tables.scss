@@ -1,0 +1,32 @@
+.mat-table {
+  width: 100%;
+  background-color: $grey;
+}
+
+.mat-header-row {
+  background-color: $primary;
+}
+
+.mat-header-cell {
+  color: white;
+}
+
+.mat-row,
+.mat-header-row {
+  height: 60px;
+}
+
+.mat-cell {
+  color: $primary;
+}
+
+.mat-header-cell,
+.mat-cell {
+  &:first-of-type {
+    padding-left: $padding-md;
+  }
+
+  &:last-of-type {
+    padding-right: $padding-md;
+  }
+}

@@ -1,20 +1,28 @@
 .mat-snack-bar-container {
-  &.warning {
+  display: flex !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: $header-height;
+  align-items: center;
+  justify-content: center;
+
+  &.mat-warning {
     background-color: $orange;
   }
 
-  &.error,
-  &.danger {
-    background-color: $cherry;
-    // background-color: $blush;
-    // background-color: $warm-red;
+  &.mat-error,
+  &.mat-danger {
+    background-color: $warm-red;
   }
 
-  &.success {
-    background-color: $primary;
+  &.mat-success {
+    background-color: green;
   }
 
-  &.info {
+  &.mat-info {
     background-color: $violet;
   }
 }

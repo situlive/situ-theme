@@ -6,6 +6,8 @@
   position: relative;
   padding: 0 40px;
   text-transform: uppercase;
+  background-color: transparent;
+  border: none;
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled):focus,
@@ -14,6 +16,8 @@
   &:not(:disabled):not(.disabled).focus {
     color: white;
     text-decoration: none;
+    border: none;
+    outline: none;
 
     &:after {
       content: "";

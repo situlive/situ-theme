@@ -1,9 +1,9 @@
-.mat-button-base {
-  display: block !important;
+.mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+  display: block;
   width: 100%;
 
   @include media-breakpoint-up(sm) {
-    display: inline-block !important;
+    display: inline-block;
     width: auto;
   }
 
@@ -25,7 +25,7 @@
   }
 }
 
-.mat-button-base:not(.mat-fab):not(.mat-mini-fab) {
+.mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
   @include titleSemiBold;
   border-radius: 25px;
   padding: 0 40px;
@@ -33,142 +33,8 @@
   margin-bottom: $margin-lg;
   text-transform: uppercase;
 
-  &.mat-primary {
-    border: 2px solid $primary;
-    background-color: $primary;
-    color: white;
-
-    &:disabled,
-    &.disabled,
-    &[disabled] {
-      background-color: rgba($primary, 0.65);
-      border: 2px solid rgba($primary, 0.1);
-      color: rgba(white, 0.65);
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      background-color: white;
-      color: $primary;
-    }
-  }
-
-  &.mat-inverse-primary {
-    border: 2px solid $primary;
-    background-color: white;
-    color: $primary;
-
-    &:disabled,
-    &.disabled,
-    &[disabled] {
-      border: 2px solid rgba($primary, 0.1);
-      background-color: rgba(white, 0.65);
-      color: rgba($primary, 0.65);
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      border-color: white;
-      background-color: $primary;
-      color: white;
-    }
-  }
-
-  &.mat-white {
-    background-color: white;
-    border: $primary;
-    color: $primary;
-
-    &:disabled,
-    &.disabled,
-    &[disabled] {
-      background-color: rgba(white, 0.65);
-      border: 2px solid rgba($primary, 0.1);
-      color: rgba($primary, 0.65);
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      background-color: white;
-      color: $primary;
-    }
-  }
-
-  &.mat-inverse-white {
-    background-color: $primary;
-    border: 2px solid white;
-    color: white;
-
-    &:disabled,
-    &.disabled,
-    &[disabled] {
-      background-color: rgba($primary, 0.65);
-      border: 2px solid rgba(white, 0.1);
-      color: rgba(white, 0.65);
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      background-color: white;
-      color: $primary;
-    }
-  }
-
-  &.mat-transparent-primary {
-    color: $primary;
-    background-color: transparent;
-    border: 2px solid $primary;
-
-    &:disabled,
-    &.disabled {
-      color: $primary;
-      border: 2px solid $primary;
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      background-color: $primary;
-      border: 2px solid $primary;
-      color: white;
-    }
-  }
-
-  &.mat-transparent-white {
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-
-    &:disabled,
-    &.disabled {
-      color: white;
-      border: 2px solid white;
-    }
-
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):focus,
-    &:not(:disabled):not(.disabled):hover,
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled).focus {
-      background-color: white;
-      border: 2px solid white;
-      color: $primary;
-    }
-  }
+  @include make-buttons("primary", $primary, white);
+  @include make-buttons("white", white, $primary);
 
   .mat-reverse>.mat-button-wrapper {
     flex-direction: row-reverse;
@@ -184,7 +50,7 @@
 
 .mat-fab,
 .mat-mini-fab {
-  border-radius: 50%;
+  //border-radius: 50%;
   display: flex;
 
   .mat-button-wrapper {
@@ -193,7 +59,7 @@
   }
 }
 
-.btn-block:not(.mat-fab):not(.mat-mini-fab) {
+.btn-block:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
   display: block;
 
   .mat-button-wrapper {

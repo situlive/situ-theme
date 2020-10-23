@@ -9,19 +9,12 @@
 @import "~bootstrap-scss/utilities";
 
 @import "~@angular/material/theming";
+
 @import './global/mixins';
 @import './global/components';
 @import "./material";
 
 @include mat-core();
-
-$sxp-primary: mat-palette($sxp-blue-palette, 800, 100, 900);
-$sxp-accent: mat-palette($sxp-jade-palette, 600, 100, 900);
-$sxp-warn: mat-palette($sxp-red-palette, 300, 100, 700);
-
-$sxp-theme: mat-light-theme($sxp-primary, $sxp-accent);
-
-@include angular-material-theme($sxp-theme);
 
 html {
     scroll-behavior: smooth;
