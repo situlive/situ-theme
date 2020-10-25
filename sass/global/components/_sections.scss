@@ -1,39 +1,39 @@
 .section {
-    padding-top: $padding-xxl/2;
-    padding-bottom: $padding-xxl/2;
+  padding-top: $padding-xxl/2;
+  padding-bottom: $padding-xxl/2;
 
-    @include media-breakpoint-up(sm) {
-        padding-top: $padding-xxl;
-        padding-bottom: $padding-xxl;
-    }
+  @include media-breakpoint-up(sm) {
+    padding-top: $padding-xxl;
+    padding-bottom: $padding-xxl;
+  }
 
-    @include media-breakpoint-up(lg) {
-        padding-top: $padding-xxl*2;
-        padding-bottom: $padding-xxl*2;
-    }
+  @include media-breakpoint-up(lg) {
+    padding-top: $padding-xxl * 2;
+    padding-bottom: $padding-xxl * 2;
+  }
 }
 
 .section-dark {
-    background-color: $blue;
-    color: $white;
+  background-color: $blue;
+  color: $white;
 }
 
 .section-jade {
-    background-color: $jade;
-    color: $white;
+  background-color: $jade;
+  color: $white;
 }
 
 .section-off-white {
-    background-color: $off-white;
-    color: $blue;
+  background-color: $off-white;
+  color: $blue;
 }
 
 .section-grey {
-    background-color: $grey;
-    color: $blue;
+  background-color: $grey;
+  color: $blue;
 }
 
 .section-dark-grey {
-    background-color: $dark-grey;
-    color: $white;
+  background-color: $dark-grey;
+  color: $white;
 }

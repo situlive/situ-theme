@@ -1,16 +1,15 @@
 @include media-breakpoint-up(lg) {
-
   .container,
   .container-fluid {
     padding-left: $grid-gutter-width-md/2;
     padding-right: $grid-gutter-width-md/2;
 
-    >.row:not(.no-gutters) {
+    > .row:not(.no-gutters) {
       margin-left: -$grid-gutter-width-md/2;
       margin-right: -$grid-gutter-width-md/2;
 
-      >.col:not(.no-gutters),
-      >[class*="col-"]:not(.no-gutters) {
+      > .col:not(.no-gutters),
+      > [class*="col-"]:not(.no-gutters) {
         padding-left: $grid-gutter-width-md/2;
         padding-right: $grid-gutter-width-md/2;
       }
@@ -22,12 +21,12 @@
     padding-left: $grid-gutter-width/2;
     padding-right: $grid-gutter-width/2;
 
-    >.row:not(.no-gutters) {
+    > .row:not(.no-gutters) {
       margin-left: -$grid-gutter-width/2;
       margin-right: -$grid-gutter-width/2;
 
-      >.col:not(.no-gutters),
-      >[class*="col-"]:not(.no-gutters) {
+      > .col:not(.no-gutters),
+      > [class*="col-"]:not(.no-gutters) {
         padding-left: $grid-gutter-width/2;
         padding-right: $grid-gutter-width/2;
       }
@@ -38,8 +37,8 @@
     margin-left: -$grid-gutter-width-lg/4 !important;
     margin-right: -$grid-gutter-width-lg/4 !important;
 
-    >.col:not(.no-gutters),
-    >[class*="col-"]:not(.no-gutters) {
+    > .col:not(.no-gutters),
+    > [class*="col-"]:not(.no-gutters) {
       padding-left: $grid-gutter-width-lg/4 !important;
       padding-right: $grid-gutter-width-lg/4 !important;
     }
@@ -49,27 +48,37 @@
     margin-left: -$grid-gutter-width-lg/8 !important;
     margin-right: -$grid-gutter-width-lg/8 !important;
 
-    >.col:not(.no-gutters),
-    >[class*="col-"]:not(.no-gutters) {
+    > .col:not(.no-gutters),
+    > [class*="col-"]:not(.no-gutters) {
       padding-left: $grid-gutter-width-lg/8 !important;
       padding-right: $grid-gutter-width-lg/8 !important;
+    }
+  }
+
+  .thinnest-gutters.row:not(.no-gutters) {
+    margin-left: -$grid-gutter-width-lg/40 !important;
+    margin-right: -$grid-gutter-width-lg/40 !important;
+
+    > .col:not(.no-gutters),
+    > [class*="col-"]:not(.no-gutters) {
+      padding-left: $grid-gutter-width-lg/40 !important;
+      padding-right: $grid-gutter-width-lg/40 !important;
     }
   }
 }
 
 @include media-breakpoint-up(xxl) {
-
   .container,
   .container-fluid {
     padding-left: $grid-gutter-width-lg/2;
     padding-right: $grid-gutter-width-lg/2;
 
-    >.row:not(.no-gutters) {
+    > .row:not(.no-gutters) {
       margin-left: -$grid-gutter-width-lg/2;
       margin-right: -$grid-gutter-width-lg/2;
 
-      >.col:not(.no-gutters),
-      >[class*="col-"]:not(.no-gutters) {
+      > .col:not(.no-gutters),
+      > [class*="col-"]:not(.no-gutters) {
         padding-left: $grid-gutter-width-lg/2;
         padding-right: $grid-gutter-width-lg/2;
       }
