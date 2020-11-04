@@ -10,3 +10,13 @@
 .list-horizontal {
   flex-direction: row !important;
 }
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  .list-horizontal#{$infix} {
+    @include media-breakpoint-up($breakpoint) {
+      flex-direction: row !important;
+    }
+  }
+}
