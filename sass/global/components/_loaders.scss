@@ -1,0 +1,11 @@
+.section-white .lds-ring > div,
+.section-off-white .lds-ring > div,
+.section-grey .lds-ring > div {
+  border-color: $blue transparent transparent transparent !important;
+}
+
+.section-dark .lds-ring > div,
+.section-jade .lds-ring > div,
+.section-dark-grey .lds-ring > div {
+  border-color: $white transparent transparent transparent !important;
+}
