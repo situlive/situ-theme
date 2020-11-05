@@ -1,5 +1,4 @@
 .btn-link {
-  color: white;
   display: block;
   text-decoration: none;
   line-height: 50px;
@@ -14,7 +13,6 @@
   &:not(:disabled):not(.disabled):hover,
   &:not(:disabled):not(.disabled).active,
   &:not(:disabled):not(.disabled).focus {
-    color: white;
     text-decoration: none;
     border: none;
     outline: none;
@@ -27,7 +25,7 @@
       right: 40px;
       height: 2px;
       border-radius: 1px;
-      background-color: white;
+      background-color: $primary;
     }
   }
 }

@@ -13,31 +13,9 @@
   }
 }
 
-.section-white {
-  background-color: $white;
-}
-
-.section-dark {
-  background-color: $blue;
-  color: $white;
-}
-
-.section-jade {
-  background-color: $jade;
-  color: $white;
-}
-
-.section-off-white {
-  background-color: $off-white;
-  color: $blue;
-}
-
-.section-grey {
-  background-color: $grey;
-  color: $blue;
-}
-
-.section-dark-grey {
-  background-color: $dark-grey;
-  color: $white;
-}
+@include createSection("dark", $blue, $white);
+@include createSection("jade", $jade, $white);
+@include createSection("dark-grey", $dark-grey, $white);
+@include createSection("white", $white, $primary);
+@include createSection("off-white", $off-white, $primary);
+@include createSection("grey", $grey, $primary);
