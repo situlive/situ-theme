@@ -1,6 +1,7 @@
 .mat-card {
   @include bodyLight;
   color: $primary !important;
+  background-color: $white;
   padding: $margin-xxl;
 }
 
