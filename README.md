@@ -57,11 +57,18 @@ And then import the theme:
 @import "~@situlive/situ-theme/sass/situ-theme";
 ```
 
-Then you can call the two mixins:
+Then you can the core mixin:
+
+```
+@include core();
+```
+
+---
+
+In some cases you may want to completely overhall the fonts, in that case you can just call the create-theme mixin and omit the core include:
 
 ```
 @include create-theme();
-@include core();
 ```
 
 ## Versioning

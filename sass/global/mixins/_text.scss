@@ -1,228 +1,231 @@
-@import '~bootstrap-scss/functions';
-@import '~bootstrap-scss/variables';
-@import '~bootstrap-scss/mixins/_breakpoints';
+@import "~bootstrap-scss/functions";
+@import "~bootstrap-scss/variables";
+@import "~bootstrap-scss/mixins/_breakpoints";
 
 @mixin bodyLight() {
-    font-family: 'SituLiveLight';
+  font-family: "SituLiveLight";
 }
 
 @mixin bodyBold() {
-    font-family: 'SituLiveBold';
+  font-family: "SituLiveBold";
 }
 
 @mixin titleLight() {
-    font-family: 'EuclidTriangleLight';
+  font-family: "EuclidTriangleLight";
 }
 
 @mixin titleLightItalic() {
-    font-family: 'EuclidTriangleLightItalic';
+  font-family: "EuclidTriangleLightItalic";
 }
 
 @mixin titleSemiBold() {
-    font-family: 'EuclidTriangleSemiBold';
+  font-family: "EuclidTriangleSemiBold";
 }
 
 @mixin titleSemiBoldItalic() {
-    font-family: 'EuclidTriangleSemiBoldItalic';
+  font-family: "EuclidTriangleSemiBoldItalic";
 }
 
 @mixin body {
-    @include bodyLight;
-    @include fontSize($font-sizes);
+  @include bodyLight;
+  @include fontSize($font-sizes);
 }
 
 @mixin headerOne() {
-    @include titleSemiBold;
-    @include fontSize($h1-sizes);
+  @include titleSemiBold;
+  @include fontSize($h1-sizes);
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @mixin headerTwo() {
-    @include titleSemiBold;
-    @include fontSize($h2-sizes);
+  @include titleSemiBold;
+  @include fontSize($h2-sizes);
 
-    margin-top: 0;
-    margin-bottom: $margin-lg;
+  margin-top: 0;
+  margin-bottom: $margin-lg;
 }
 
 @mixin headerThree {
-    @include titleSemiBold;
-    @include fontSize($h3-sizes);
+  @include titleSemiBold;
+  @include fontSize($h3-sizes);
 
-    margin-top: 0;
-    margin-bottom: $margin-lg;
+  margin-top: 0;
+  margin-bottom: $margin-lg;
 }
 
 @mixin headerFour {
-    @include titleSemiBold;
-    @include fontSize($h4-sizes);
+  @include titleSemiBold;
+  @include fontSize($h4-sizes);
 
-    margin-top: 0;
-    margin-bottom: $margin-lg;
+  margin-top: 0;
+  margin-bottom: $margin-lg;
 }
 
 @mixin headerFive {
-    @include bodyBold;
-    @include fontSize($h5-sizes);
+  @include bodyBold;
+  @include fontSize($h5-sizes);
 
-    margin-top: 0;
-    margin-bottom: $margin-lg;
+  margin-top: 0;
+  margin-bottom: $margin-lg;
 }
 
 @mixin headerSix {
-    @include titleSemiBold;
-    @include fontSize($h6-sizes);
+  @include titleSemiBold;
+  @include fontSize($h6-sizes);
 
-    margin-top: 0;
-    margin-bottom: $margin-lg;
+  margin-top: 0;
+  margin-bottom: $margin-lg;
 }
 
 @mixin fontSize($sizes) {
+  font-size: map-get($sizes, xs);
+
+  @include media-breakpoint-up(xs) {
     font-size: map-get($sizes, xs);
+  }
 
-    @include media-breakpoint-up(xs) {
-        font-size: map-get($sizes, xs);
-    }
+  @include media-breakpoint-up(sm) {
+    font-size: map-get($sizes, sm);
+  }
 
-    @include media-breakpoint-up(sm) {
-        font-size: map-get($sizes, sm);
-    }
+  @include media-breakpoint-up(md) {
+    font-size: map-get($sizes, md);
+  }
 
-    @include media-breakpoint-up(md) {
-        font-size: map-get($sizes, md);
-    }
+  @include media-breakpoint-up(lg) {
+    font-size: map-get($sizes, lg);
+  }
 
-    @include media-breakpoint-up(lg) {
-        font-size: map-get($sizes, lg);
-    }
-
-    @include media-breakpoint-up(xl) {
-        font-size: map-get($sizes, xl);
-    }
+  @include media-breakpoint-up(xl) {
+    font-size: map-get($sizes, xl);
+  }
 }
 
 @mixin makeGradientText($percent) {
-    background: linear-gradient(to left, $jade $percent, $bright-blue);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to left, $jade $percent, $bright-blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@mixin core() {
-    @font-face {
-        font-family: "SituLiveBold";
-        src: url("#{$situ-font-path}/situlive-bold.woff2") format("woff2"),
-        url("#{$situ-font-path}/situlive-bold.woff") format("woff");
-        font-display: swap;
-        font-weight: bold;
-        font-style: normal;
-    }
+@mixin situ-text() {
+  @font-face {
+    font-family: "SituLiveBold";
+    src: url("#{$situ-font-path}/situlive-bold.woff2") format("woff2"),
+      url("#{$situ-font-path}/situlive-bold.woff") format("woff");
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: "SituLiveLight";
-        src: url("#{$situ-font-path}/situlive-light.woff2") format("woff2"),
-        url("#{$situ-font-path}/situlive-light.woff") format("woff");
-        font-display: swap;
-        font-weight: 300;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: "SituLiveLight";
+    src: url("#{$situ-font-path}/situlive-light.woff2") format("woff2"),
+      url("#{$situ-font-path}/situlive-light.woff") format("woff");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: "EuclidTriangleLight";
-        src: url("#{$situ-font-path}/euclidtriangle-light.woff2") format("woff2"),
-        url("#{$situ-font-path}/euclidtriangle-light.woff") format("woff");
-        font-display: swap;
-        font-weight: 300;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: "EuclidTriangleLight";
+    src: url("#{$situ-font-path}/euclidtriangle-light.woff2") format("woff2"),
+      url("#{$situ-font-path}/euclidtriangle-light.woff") format("woff");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: "EuclidTriangleLightItalic";
-        src: url("#{$situ-font-path}/euclidtriangle-lightitalic.woff2") format("woff2"),
-        url("#{$situ-font-path}/euclidtriangle-lightitalic.woff") format("woff");
-        font-display: swap;
-        font-weight: 300;
-        font-style: italic;
-    }
+  @font-face {
+    font-family: "EuclidTriangleLightItalic";
+    src: url("#{$situ-font-path}/euclidtriangle-lightitalic.woff2")
+        format("woff2"),
+      url("#{$situ-font-path}/euclidtriangle-lightitalic.woff") format("woff");
+    font-display: swap;
+    font-weight: 300;
+    font-style: italic;
+  }
 
-    @font-face {
-        font-family: "EuclidTriangleSemiBold";
-        src: url("#{$situ-font-path}/euclidtriangle-semibold.woff2") format("woff2"),
-        url("#{$situ-font-path}/euclidtriangle-semibold.woff") format("woff");
-        font-display: swap;
-        font-weight: 600;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: "EuclidTriangleSemiBold";
+    src: url("#{$situ-font-path}/euclidtriangle-semibold.woff2") format("woff2"),
+      url("#{$situ-font-path}/euclidtriangle-semibold.woff") format("woff");
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: "EuclidTriangleSemiBoldItalic";
-        src: url("#{$situ-font-path}/euclidtriangle-semibolditalic.woff2") format("woff2"),
-        url("#{$situ-font-path}/euclidtriangle-semibolditalic.woff") format("woff");
-        font-display: swap;
-        font-weight: 600;
-        font-style: italic;
-    }
+  @font-face {
+    font-family: "EuclidTriangleSemiBoldItalic";
+    src: url("#{$situ-font-path}/euclidtriangle-semibolditalic.woff2")
+        format("woff2"),
+      url("#{$situ-font-path}/euclidtriangle-semibolditalic.woff")
+        format("woff");
+    font-display: swap;
+    font-weight: 600;
+    font-style: italic;
+  }
 
-    body {
-        @include body;
-    }
+  body {
+    @include body;
+  }
 
-    h1,
-    .h1 {
-        line-height: 1;
-    }
+  h1,
+  .h1 {
+    line-height: 1;
+  }
 
-    h1,
-    .h1 {
-        @include headerOne;
-    }
+  h1,
+  .h1 {
+    @include headerOne;
+  }
 
-    h2,
-    .h2 {
-        @include headerTwo;
-    }
+  h2,
+  .h2 {
+    @include headerTwo;
+  }
 
-    h3,
-    .h3 {
-        @include headerThree;
-    }
+  h3,
+  .h3 {
+    @include headerThree;
+  }
 
-    h4,
-    .h4 {
-        @include headerFour;
-    }
+  h4,
+  .h4 {
+    @include headerFour;
+  }
 
-    h5,
-    .h5 {
-        @include headerFive;
-    }
+  h5,
+  .h5 {
+    @include headerFive;
+  }
 
-    h6,
-    .h6 {
-        @include headerSix;
-    }
+  h6,
+  .h6 {
+    @include headerSix;
+  }
 
-    label {
-        @include bodyBold;
-        margin-bottom: $margin-xs;
-        text-transform: uppercase;
-        font-size: 12px;
-    }
+  label {
+    @include bodyBold;
+    margin-bottom: $margin-xs;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 
-    ul {
-        @include titleSemiBold;
-    }
+  ul {
+    @include titleSemiBold;
+  }
 
-    input {
-        @include bodyBold;
-    }
+  input {
+    @include bodyBold;
+  }
 
-    p {
-        margin-bottom: $margin-lg;
-    }
+  p {
+    margin-bottom: $margin-lg;
+  }
 
-    .small {
-        @include fontSize($small-sizes);
-    }
+  .small {
+    @include fontSize($small-sizes);
+  }
 }
