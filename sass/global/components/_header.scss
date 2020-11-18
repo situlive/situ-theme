@@ -18,12 +18,15 @@
 
   .logo {
     width: 50%;
+    position: relative;
+    z-index: 9999;
 
     @include media-breakpoint-up(sm) {
       width: auto;
     }
 
     > svg {
+      overflow: visible;
       margin: 32px 15px 32px 0;
       height: $logo-height;
       width: 100%;
