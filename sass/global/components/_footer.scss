@@ -92,7 +92,15 @@ $logo-height: 36px;
     }
   }
 
-  .logomark {
-    width: 40px;
+  .footer-description {
+    .linkedin svg,
+    .twitter svg {
+      height: 25px;
+      fill: $dark-grey;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 }
