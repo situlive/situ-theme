@@ -46,7 +46,7 @@ Which gives you access to the grid system aswell as the utlity classes like `mb-
 To use the situ theme, import your variables and overrides first:
 
 ```
-@import "./variables";
+@import "./variables"; // Your application variables
 
 $situ-font-path: "~@situlive/situ-theme/fonts";
 ```
@@ -63,12 +63,75 @@ Then you can the core mixin:
 @include core();
 ```
 
+Your styles.scss should look something like this:
+
+```
+@import "./variables"; // Your application variables
+
+$situ-font-path: "~@situlive/situ-theme/fonts";
+
+@import "~@situlive/situ-theme/sass/situ-theme";
+@include core();
+
+@import "./components"; // Your application components
+
+```
+
 ---
 
 In some cases you may want to completely overhall the fonts, in that case you can just call the create-theme mixin and omit the core include:
 
 ```
 @include create-theme();
+```
+
+### Performance
+
+When using in angular universal applications, you may need to preload the fonts.
+While the above version is the easiest to setup, a more preffered way would be to copy the fonts to your assets directory (so that they retain their original names when build --prod is used) and then add the following to your index.html head section:
+
+```
+<link rel="preload" href="/assets/fonts/euclidtriangle-semibold.woff2" as="font" crossorigin="anonymous">
+```
+
+This will ensure the fonts are preloaded and won't affect performance.
+To copy the fonts over to your assets folder, open your angular.json and paste the following into the assets section:
+
+```
+{
+  "glob": "*.woff2",
+  "input": "./node_modules/@situlive/situ-theme/fonts",
+  "output": "./assets"
+}
+```
+
+The whole section might look something like this:
+
+```
+"assets": [
+  "src/robots.txt",
+  "src/web.config",
+  "src/assets",
+  {
+    "glob": "*.woff2",
+    "input": "./node_modules/@situlive/situ-theme/fonts",
+    "output": "./assets"
+  }
+],
+```
+
+Once you have followed these steps, change your font path in your styles.scss to this:
+
+```
+@import "./variables"; // Your application variables
+
+$situ-font-path: "/assets/fonts";
+
+@import "~@situlive/situ-theme/sass/situ-theme";
+@include core();
+
+@import "./components"; // Your application components
+
 ```
 
 ## Versioning
