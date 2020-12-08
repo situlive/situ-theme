@@ -2,37 +2,21 @@
 @import "~bootstrap-scss/variables";
 @import "~bootstrap-scss/mixins/_breakpoints";
 
-@mixin bodyLight() {
+@mixin bodyFont() {
   font-family: "SituLiveLight";
 }
 
-@mixin bodyBold() {
-  font-family: "SituLiveBold";
-}
-
-@mixin titleLight() {
-  font-family: "EuclidTriangleLight";
-}
-
-@mixin titleLightItalic() {
-  font-family: "EuclidTriangleLightItalic";
-}
-
-@mixin titleSemiBold() {
+@mixin titleFont() {
   font-family: "EuclidTriangleSemiBold";
 }
 
-@mixin titleSemiBoldItalic() {
-  font-family: "EuclidTriangleSemiBoldItalic";
-}
-
 @mixin body {
-  @include bodyLight;
+  @include bodyFont;
   @include fontSize($font-sizes);
 }
 
 @mixin headerOne() {
-  @include titleSemiBold;
+  @include titleFont;
   @include fontSize($h1-sizes);
 
   margin-top: 0;
@@ -40,7 +24,7 @@
 }
 
 @mixin headerTwo() {
-  @include titleSemiBold;
+  @include titleFont;
   @include fontSize($h2-sizes);
 
   margin-top: 0;
@@ -48,7 +32,7 @@
 }
 
 @mixin headerThree {
-  @include titleSemiBold;
+  @include titleFont;
   @include fontSize($h3-sizes);
 
   margin-top: 0;
@@ -56,7 +40,7 @@
 }
 
 @mixin headerFour {
-  @include titleSemiBold;
+  @include titleFont;
   @include fontSize($h4-sizes);
 
   margin-top: 0;
@@ -64,7 +48,7 @@
 }
 
 @mixin headerFive {
-  @include bodyBold;
+  @include bodyFont;
   @include fontSize($h5-sizes);
 
   margin-top: 0;
@@ -72,7 +56,7 @@
 }
 
 @mixin headerSix {
-  @include titleSemiBold;
+  @include bodyFont;
   @include fontSize($h6-sizes);
 
   margin-top: 0;
@@ -111,40 +95,12 @@
 
 @mixin situ-text() {
   @font-face {
-    font-family: "SituLiveBold";
-    src: url("#{$situ-font-path}/situlive-bold.woff2") format("woff2"),
-      url("#{$situ-font-path}/situlive-bold.woff") format("woff");
-    font-display: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  @font-face {
     font-family: "SituLiveLight";
     src: url("#{$situ-font-path}/situlive-light.woff2") format("woff2"),
       url("#{$situ-font-path}/situlive-light.woff") format("woff");
     font-display: auto;
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
-  }
-
-  @font-face {
-    font-family: "EuclidTriangleLight";
-    src: url("#{$situ-font-path}/euclidtriangle-light.woff2") format("woff2"),
-      url("#{$situ-font-path}/euclidtriangle-light.woff") format("woff");
-    font-display: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "EuclidTriangleLightItalic";
-    src: url("#{$situ-font-path}/euclidtriangle-lightitalic.woff2")
-        format("woff2"),
-      url("#{$situ-font-path}/euclidtriangle-lightitalic.woff") format("woff");
-    font-display: auto;
-    font-weight: 300;
-    font-style: italic;
   }
 
   @font-face {
@@ -154,17 +110,6 @@
     font-display: auto;
     font-weight: 600;
     font-style: normal;
-  }
-
-  @font-face {
-    font-family: "EuclidTriangleSemiBoldItalic";
-    src: url("#{$situ-font-path}/euclidtriangle-semibolditalic.woff2")
-        format("woff2"),
-      url("#{$situ-font-path}/euclidtriangle-semibolditalic.woff")
-        format("woff");
-    font-display: auto;
-    font-weight: 600;
-    font-style: italic;
   }
 
   body {
@@ -207,18 +152,18 @@
   }
 
   label {
-    @include bodyBold;
+    @include bodyFont;
     margin-bottom: $margin-xs;
     text-transform: uppercase;
     font-size: 12px;
   }
 
   ul {
-    @include titleSemiBold;
+    @include titleFont;
   }
 
   input {
-    @include bodyBold;
+    @include bodyFont;
   }
 
   p {
