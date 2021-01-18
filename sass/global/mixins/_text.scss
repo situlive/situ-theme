@@ -63,27 +63,28 @@
   margin-bottom: $margin-lg;
 }
 
-@mixin fontSize($sizes) {
-  font-size: map-get($sizes, xs);
+@mixin fontSize($sizes, $i: false /* flag for`!important` */) {
+  $important: if($i, "!important", "");
+  font-size: map-get($sizes, xs) #{$important};
 
   @include media-breakpoint-up(xs) {
-    font-size: map-get($sizes, xs);
+    font-size: map-get($sizes, xs) #{$important};
   }
 
   @include media-breakpoint-up(sm) {
-    font-size: map-get($sizes, sm);
+    font-size: map-get($sizes, sm) #{$important};
   }
 
   @include media-breakpoint-up(md) {
-    font-size: map-get($sizes, md);
+    font-size: map-get($sizes, md) #{$important};
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: map-get($sizes, lg);
+    font-size: map-get($sizes, lg) #{$important};
   }
 
   @include media-breakpoint-up(xl) {
-    font-size: map-get($sizes, xl);
+    font-size: map-get($sizes, xl) #{$important};
   }
 }
 
