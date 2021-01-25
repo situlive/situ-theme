@@ -66,6 +66,7 @@
     position: relative;
 
     .mat-icon {
+      top: 13px; // Height of button - height of icon / 2
       left: -25px;
       position: absolute;
     }
