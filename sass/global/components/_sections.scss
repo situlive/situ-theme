@@ -18,4 +18,5 @@
 @include createSection("dark-grey", $dark-grey, $white);
 @include createSection("white", $white, $primary);
 @include createSection("off-white", $off-white, $primary);
+@include createSection("light-grey", $light-grey, $primary);
 @include createSection("grey", $grey, $primary);
