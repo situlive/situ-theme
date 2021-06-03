@@ -16,5 +16,9 @@
         }
       }
     }
+
+    > .lds-ring > div {
+      border-color: $fontColour transparent transparent transparent !important;
+    }
   }
 }
