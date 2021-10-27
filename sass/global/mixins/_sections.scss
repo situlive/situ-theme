@@ -5,16 +5,6 @@
 
     .btn-link {
       color: $fontColour !important;
-
-      &:not(:disabled):not(.disabled):active,
-      &:not(:disabled):not(.disabled):focus,
-      &:not(:disabled):not(.disabled):hover,
-      &:not(:disabled):not(.disabled).active,
-      &:not(:disabled):not(.disabled).focus {
-        &:after {
-          background-color: $fontColour !important;
-        }
-      }
     }
 
     > .lds-ring > div {

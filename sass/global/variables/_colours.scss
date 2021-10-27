@@ -1,6 +1,3 @@
-$grey: #676b73 !default;
-$slate-grey: #3c414b !default;
-$silver: #bfc5ca !default;
 $pure-blue: #081dbe !default;
 $pink: #f0949b !default;
 $yellow: #ffc04a !default;
@@ -12,11 +9,17 @@ $cherry: #b24ebe !default;
 $orange: #ff8204 !default;
 $jade: #00c8b7 !default;
 $blue: #081d4d !default;
-$dark-grey: #272d38 !default;
 $black: #000000 !default;
-$light-grey: #d6dce0 !default;
-$off-white: #f6f7f8 !default;
 $blush: #eacbc7 !default;
 
 $white: #ffffff !default;
 $primary: $blue !default;
+
+// GREYS
+$dark-grey: #272d38 !default;
+$grey: #676b73 !default;
+$slate-grey: #3c414b !default;
+$silver: #b5bac2 !default;
+$light-grey: #e8ecef !default;
+$off-white: #f2f4f7 !default;
+$ice-white: #f7f9fc !default;
