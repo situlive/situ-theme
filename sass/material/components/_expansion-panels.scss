@@ -1,5 +1,5 @@
 .mat-expansion-panel-header {
-  .mat-button-base {
+  .mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
     padding: 0 10px !important;
     line-height: 30px !important;
     margin-bottom: 0 !important;

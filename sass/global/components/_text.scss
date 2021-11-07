@@ -1,16 +1,23 @@
-.blockquote, blockquote {
-    margin: 0 $margin-lg $margin-lg $margin-lg;
-    padding: $padding-lg;    
-    border-left: 5px solid $primary;
-    background-color: $off-white;
+.blockquote,
+blockquote {
+  margin: 0 $margin-lg $margin-lg $margin-lg;
+  padding: $padding-lg;
+  border-left: 5px solid $primary;
+  background-color: $off-white;
 
-    > p:last-child {
-        margin-bottom: 0;
-    }
+  > p:last-child {
+    margin-bottom: 0;
+  }
 
-    a { 
-        margin-top: -$margin-lg;
-        display: block;
-        font-size: smaller;
-    }
+  a {
+    margin-top: -$margin-lg;
+    display: block;
+    font-size: smaller;
+  }
+}
+
+@each $colour in $colours {
+  .text--#{$color} {
+    color: $colour;
+  }
 }
