@@ -13,6 +13,7 @@
 @mixin body {
   @include bodyFont;
   @include fontSize($font-sizes);
+  font-weight: 400;
 }
 
 @mixin headerOne() {
@@ -150,6 +151,10 @@
   h6,
   .h6 {
     @include headerSix;
+  }
+
+  .p {
+    @include body;
   }
 
   label {

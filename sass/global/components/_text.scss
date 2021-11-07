@@ -16,8 +16,8 @@ blockquote {
   }
 }
 
-@each $colour in $colours {
-  .text--#{$color} {
+@each $name, $colour in $colours {
+  .text--#{$name} {
     color: $colour;
   }
 }

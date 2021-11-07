@@ -24,6 +24,27 @@ $light-grey: #e8ecef !default;
 $off-white: #f2f4f7 !default;
 $ice-white: #f7f9fc !default;
 
-$colours: $pure-blue, $pink, $yellow, $warm-red, $pale-blue, $violet,
-  $bright-blue, $cherry, $orange, $jade, $blue, $black, $blush, $white, $primary,
-  $dark-grey, $grey, $slate-grey, $silver, $light-grey, $off-white, $ice-white;
+$colours: (
+  "pure-blue": $pure-blue,
+  "pink": $pink,
+  "yellow": $yellow,
+  "warm-red": $warm-red,
+  "pale-blue": $pale-blue,
+  "violet": $violet,
+  "bright-blue": $bright-blue,
+  "cherry": $cherry,
+  "orange": $orange,
+  "jade": $jade,
+  "blue": $blue,
+  "black": $black,
+  "blush": $blush,
+  "white": $white,
+  "primary": $primary,
+  "dark-grey": $dark-grey,
+  "grey": $grey,
+  "slate-grey": $slate-grey,
+  "silver": $silver,
+  "light-grey": $light-grey,
+  "off-white": $off-white,
+  "ice-white": $ice-white,
+);
