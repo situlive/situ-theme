@@ -2,12 +2,14 @@
 @import "~bootstrap-scss/variables";
 @import "~bootstrap-scss/mixins/_breakpoints";
 
-@mixin bodyFont() {
-  font-family: "SituLiveLight";
+@mixin bodyFont($i: false /* flag for`!important` */) {
+  $important: if($i, "!important", "");
+  font-family: "SituLiveLight" #{$important};
 }
 
-@mixin titleFont() {
-  font-family: "EuclidTriangleSemiBold";
+@mixin titleFont($i: false /* flag for`!important` */) {
+  $important: if($i, "!important", "");
+  font-family: "EuclidTriangleSemiBold" #{$important};
 }
 
 @mixin body {
