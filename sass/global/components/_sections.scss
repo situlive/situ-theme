@@ -1,6 +1,6 @@
 .section {
-  padding-top: $padding-xxl/2;
-  padding-bottom: $padding-xxl/2;
+  padding-top: math.div($padding-xxl, 2);
+  padding-bottom: math.div($padding-xxl, 2);
 
   @include media-breakpoint-up(sm) {
     padding-top: $padding-xxl;
