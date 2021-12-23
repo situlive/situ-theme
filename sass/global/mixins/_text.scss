@@ -2,6 +2,12 @@
 @import "~bootstrap-scss/variables";
 @import "~bootstrap-scss/mixins/_breakpoints";
 
+@mixin createText($name, $fontColour) {
+  &.#{$name}--text {
+    color: $fontColour;
+  }
+}
+
 @mixin bodyFont($i: false /* flag for`!important` */) {
   $important: if($i, "!important", "");
   font-family: "SituLiveLight" #{$important};
