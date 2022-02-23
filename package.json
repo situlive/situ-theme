@@ -1,6 +1,6 @@
 {
   "name": "@situlive/situ-theme",
-  "version": "1.5.06",
+  "version": "1.5.07",
   "description": "Situ's base theme package for both angular material and bootstrap",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/situlive/situ-theme/issues"
   },
-  "homepage": "https://github.com/situlive/situ-theme#readme"
+  "homepage": "https://github.com/situlive/situ-theme#readme",
+  "dependencies": {
+    "@angular/material": "^13.2.3",
+    "bootstrap-scss": "^4.6.1"
+  }
 }
