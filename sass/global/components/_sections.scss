@@ -29,14 +29,14 @@
 @include createSection("violet", $violet, $white);
 
 @include createGradientSection(
-  "gradiant-bright-blue",
+  "gradient-bright-blue",
   $white,
   110deg,
   $jade,
   $bright-blue
 );
 @include createGradientSection(
-  "gradiant-cherry",
+  "gradient-cherry",
   $white,
   110deg,
   $jade,
