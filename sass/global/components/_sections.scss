@@ -15,13 +15,31 @@
   }
 }
 
+@include createSection("bright-blue", $bright-blue, $white);
 @include createSection("dark", $blue, $white);
-@include createSection("jade", $jade, $white);
 @include createSection("dark-grey", $dark-grey, $white);
-@include createSection("white", $white, $primary);
-@include createSection("off-white", $off-white, $primary);
-@include createSection("light-grey", $light-grey, $primary);
 @include createSection("grey", $grey, $primary);
 @include createSection("ice-white", $ice-white, $primary);
+@include createSection("jade", $jade, $white);
+@include createSection("light-grey", $light-grey, $primary);
+@include createSection("off-white", $off-white, $primary);
 @include createSection("orange", $orange, $white);
 @include createSection("warm-red", $warm-red, $white);
+@include createSection("white", $white, $primary);
+@include createSection("violet", $violet, $white);
+
+@include createGradientSection(
+  "gradiant-bright-blue",
+  $white,
+  110deg,
+  $jade,
+  $bright-blue
+);
+@include createGradientSection(
+  "gradiant-cherry",
+  $white,
+  110deg,
+  $jade,
+  $bright-blue,
+  $cherry
+);
