@@ -49,7 +49,7 @@ $colours: (
   "yellow": $yellow,
 );
 
-$light-colours: {
+$light-colours: (
   "blush": $blush,
   "grey": $grey,
   "ice-white": $ice-white,
@@ -62,9 +62,9 @@ $light-colours: {
   "slate-grey": $slate-grey,
   "white": $white,
   "yellow": $yellow,
-}
+);
 
-$dark-colours: {
+$dark-colours: (
   "black": $black,
   "blue": $blue,
   "bright-blue": $bright-blue,
@@ -76,4 +76,4 @@ $dark-colours: {
   "pure-blue": $pure-blue,
   "violet": $violet,
   "warm-red": $warm-red,
-}
+);
