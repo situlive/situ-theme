@@ -18,30 +18,6 @@ blockquote {
 
 @each $name, $colour in $colours {
   .text--#{$name} {
-    color: $colour;
+    color: $colour !important;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-.p {
-  @include createText("dark", $blue);
-  @include createText("jade", $jade);
-  @include createText("dark-grey", $dark-grey);
-  @include createText("white", $white);
-  @include createText("off-white", $off-white);
-  @include createText("light-grey", $light-grey);
-  @include createText("grey", $grey);
-  @include createText("ice-white", $ice-white);
 }
