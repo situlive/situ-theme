@@ -20,4 +20,8 @@ blockquote {
   .text--#{$name} {
     color: $colour !important;
   }
+
+  .#{$name}--text {
+    color: $colour !important;
+  }
 }
