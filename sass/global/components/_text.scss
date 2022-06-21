@@ -17,10 +17,6 @@ blockquote {
 }
 
 @each $name, $colour in $colours {
-  .text--#{$name} {
-    color: $colour !important;
-  }
-
   .#{$name}--text {
     color: $colour !important;
   }
