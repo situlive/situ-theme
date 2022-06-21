@@ -15,54 +15,13 @@
   }
 }
 
-@include createSection("black", $black, $white);
-@include createSection("blue", $blue, $white);
-@include createSection("blush", $blush, $primary);
-@include createSection("bright-blue", $bright-blue, $white);
-@include createSection("cherry", $cherry, $white);
-@include createSection("dark-grey", $dark-grey, $white);
-@include createSection("grey", $grey, $primary);
-@include createSection("ice-white", $ice-white, $primary);
-@include createSection("jade", $jade, $white);
-@include createSection("light-grey", $light-grey, $primary);
-@include createSection("off-white", $off-white, $primary);
-@include createSection("orange", $orange, $white);
-@include createSection("pale-blue", $pale-blue, $primary);
-@include createSection("pink", $pink, $primary);
-@include createSection("pure-blue", $pure-blue, $white);
-@include createSection("silver", $silver, $primary);
-@include createSection("slate-grey", $slate-grey, $primary);
-@include createSection("violet", $violet, $white);
-@include createSection("warm-red", $warm-red, $white);
-@include createSection("white", $white, $primary);
-@include createSection("yellow", $yellow, $primary);
+@each $name, $colour in $dark-colours {
+  @include createSection($name, $colour, $white);
+}
 
-
-@include createSection("dark", $blue, $white);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"pink": $pink,
-"primary": $primary,
-"pure-blue": $pure-blue,
-"silver": $silver,
-"slate-grey": $slate-grey,
-"violet": $violet,
-"warm-red": $warm-red,
-"white": $white,
-"yellow": $yellow,
-
+@each $name, $colour in $light-colours {
+  @include createSection($name, $colour, $primary);
+}
 
 @include createGradientSection(
   "gradient-bright-blue",
