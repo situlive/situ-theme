@@ -1,12 +1,14 @@
 @use "sass:math";
 
-@mixin aspect-ratio($width, $height) {
+@mixin aspect-ratio($width, $height, $i: false /* flag for`!important` */) {
+  $important: if($i, "!important", "");
+
   position: relative;
   &:before {
     display: block;
     content: "";
     width: 100%;
-    padding-top: math.div($height, $width) * 100%;
+    padding-top: math.div($height, $width) * 100% #{$important};
   }
   > .content {
     position: absolute;
