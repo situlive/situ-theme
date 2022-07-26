@@ -114,6 +114,15 @@
   }
 
   @font-face {
+    font-family: "SituLiveBold";
+    src: url("#{$situ-font-path}/situlive-bold.woff2") format("woff2"),
+      url("#{$situ-font-path}/situlive-bold.woff") format("woff");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: "EuclidTriangleSemiBold";
     src: url("#{$situ-font-path}/euclidtriangle-semibold.woff2") format("woff2"),
       url("#{$situ-font-path}/euclidtriangle-semibold.woff") format("woff");
