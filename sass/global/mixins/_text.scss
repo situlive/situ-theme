@@ -13,6 +13,11 @@
   font-family: "SituLiveLight" #{$important};
 }
 
+@mixin boldBodyFont($i: false /* flag for`!important` */) {
+  $important: if($i, "!important", "");
+  font-family: "SituLiveBold" #{$important};
+}
+
 @mixin titleFont($i: false /* flag for`!important` */) {
   $important: if($i, "!important", "");
   font-family: "EuclidTriangleSemiBold" #{$important};
@@ -21,12 +26,14 @@
 @mixin body {
   @include bodyFont;
   @include fontSize($font-sizes);
+  @include lineHeight($font-lineheight);
   font-weight: 400;
 }
 
 @mixin headerOne() {
   @include titleFont;
   @include fontSize($h1-sizes);
+  @include lineHeight($h1-lineheight);
 
   margin-top: 0;
   margin-bottom: 0;
@@ -35,6 +42,7 @@
 @mixin headerTwo() {
   @include titleFont;
   @include fontSize($h2-sizes);
+  @include lineHeight($h2-lineheight);
 
   margin-top: 0;
   margin-bottom: $margin-lg;
@@ -43,30 +51,34 @@
 @mixin headerThree {
   @include titleFont;
   @include fontSize($h3-sizes);
+  @include lineHeight($h3-lineheight);
 
   margin-top: 0;
   margin-bottom: $margin-lg;
 }
 
 @mixin headerFour {
-  @include titleFont;
+  @include boldBodyFont;
   @include fontSize($h4-sizes);
+  @include lineHeight($h4-lineheight);
 
   margin-top: 0;
   margin-bottom: $margin-lg;
 }
 
 @mixin headerFive {
-  @include bodyFont;
+  @include boldBodyFont;
   @include fontSize($h5-sizes);
+  @include lineHeight($h5-lineheight);
 
   margin-top: 0;
   margin-bottom: $margin-lg;
 }
 
 @mixin headerSix {
-  @include bodyFont;
+  @include boldBodyFont;
   @include fontSize($h6-sizes);
+  @include lineHeight($h6-lineheight);
 
   margin-top: 0;
   margin-bottom: $margin-lg;
@@ -94,6 +106,31 @@
 
   @include media-breakpoint-up(xl) {
     font-size: map-get($sizes, xl) #{$important};
+  }
+}
+
+@mixin lineHeight($sizes, $i: false /* flag for`!important` */) {
+  $important: if($i, "!important", "");
+  line-height: map-get($sizes, xs) #{$important};
+
+  @include media-breakpoint-up(xs) {
+    line-height: map-get($sizes, xs) #{$important};
+  }
+
+  @include media-breakpoint-up(sm) {
+    line-height: map-get($sizes, sm) #{$important};
+  }
+
+  @include media-breakpoint-up(md) {
+    line-height: map-get($sizes, md) #{$important};
+  }
+
+  @include media-breakpoint-up(lg) {
+    line-height: map-get($sizes, lg) #{$important};
+  }
+
+  @include media-breakpoint-up(xl) {
+    line-height: map-get($sizes, xl) #{$important};
   }
 }
 
@@ -195,5 +232,14 @@
 
   .small {
     @include fontSize($small-sizes);
+    @include lineHeight($small-lineheight);
+  }
+
+  .body--light {
+    font-family: "SituLiveLight" !important;
+  }
+
+  .body--bold {
+    font-family: "SituLiveBold" !important;
   }
 }
