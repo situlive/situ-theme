@@ -10,6 +10,12 @@
     > .lds-ring > div {
       border-color: $fontColour transparent transparent transparent !important;
     }
+
+    @for $i from 1 through 100 {
+      &.background-opacity-#{$i} {
+        background-color: rgba($backgroundColour, calc($i / 100));
+      }
+    }
   }
 }
 
