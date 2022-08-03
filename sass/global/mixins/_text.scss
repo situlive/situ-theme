@@ -11,11 +11,13 @@
 @mixin bodyFont($i: false /* flag for`!important` */) {
   $important: if($i, "!important", "");
   font-family: "SituLiveLight" #{$important};
+  font-weight: normal #{$important};
 }
 
 @mixin boldBodyFont($i: false /* flag for`!important` */) {
   $important: if($i, "!important", "");
   font-family: "SituLiveBold" #{$important};
+  font-weight: bold #{$important};
 }
 
 @mixin titleFont($i: false /* flag for`!important` */) {
@@ -237,9 +239,11 @@
 
   .body--light {
     font-family: "SituLiveLight" !important;
+    font-weight: normal !important;
   }
 
   .body--bold {
     font-family: "SituLiveBold" !important;
+    font-weight: bold !important;
   }
 }
