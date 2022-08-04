@@ -45,15 +45,15 @@ $font-sizes: (
   xs: 16px,
   sm: 16px,
   md: 16px,
-  lg: 16px,
-  xl: 16px,
+  lg: 18px,
+  xl: 18px,
 ) !default;
 $small-sizes: (
   xs: 14px,
   sm: 14px,
   md: 14px,
-  lg: 14px,
-  xl: 14px,
+  lg: 16px,
+  xl: 16px,
 ) !default;
 $h1-lineheight: (
   xs: 43px,
@@ -101,14 +101,14 @@ $font-lineheight: (
   xs: 22px,
   sm: 23px,
   md: 23px,
-  lg: 23px,
-  xl: 23px,
+  lg: 25px,
+  xl: 25px,
 ) !default;
 $small-lineheight: (
   xs: 20px,
   sm: 20px,
   md: 20px,
-  lg: 20px,
-  xl: 20px,
+  lg: 22px,
+  xl: 22px,
 ) !default;
 $button-sizes: $font-sizes !default;
