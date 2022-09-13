@@ -237,13 +237,15 @@
     @include lineHeight($small-lineheight);
   }
 
-  .body--light {
-    font-family: "SituLiveLight" !important;
-    font-weight: normal !important;
+  .title-text {
+    @include titleFont(1);
   }
 
-  .body--bold {
-    font-family: "SituLiveBold" !important;
-    font-weight: bold !important;
+  .body-text--light {
+    @include bodyFont(1);
+  }
+
+  .body-text--bold {
+    @include boldBodyFont(1);
   }
 }
