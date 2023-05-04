@@ -37,6 +37,10 @@ $coral--60: #fec8c8;
 $orange--60: #fbd6ac;
 $yellow--60: #ffebbc;
 
+// new theme colours
+$new-primary: #152f4b;
+$new-accent: #93ef64;
+
 $colours: (
   "black": $black,
   "blue": $blue,
@@ -70,6 +74,9 @@ $colours: (
   "white": $white,
   "yellow": $yellow,
   "yellow--light": $yellow--60,
+
+  "new-primary": $new-primary,
+  "new-accent": $new-accent,
 );
 
 $light-colours: (
@@ -93,6 +100,8 @@ $light-colours: (
   "white": $white,
   "yellow": $yellow,
   "yellow--light": $yellow--60,
+
+  "new-accent": $new-accent,
 );
 
 $dark-colours: (
@@ -109,4 +118,6 @@ $dark-colours: (
   "slate-grey": $slate-grey,
   "violet": $violet,
   "warm-red": $warm-red,
+
+  "new-primary": $new-primary,
 );

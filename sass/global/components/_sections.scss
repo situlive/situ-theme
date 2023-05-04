@@ -38,3 +38,11 @@
   $bright-blue,
   $cherry
 );
+@include createGradientSection(
+  "gradient-cherry--light",
+  $white,
+  110deg,
+  $jade--30,
+  $bright-blue--30,
+  $cherry--30
+);
