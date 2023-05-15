@@ -5,7 +5,7 @@
   width: 100%;
 
   @include media-breakpoint-up(sm) {
-    display: inline-block;
+    display: inline-flex;
     width: auto;
   }
 
@@ -33,7 +33,6 @@
   @include titleFont;
   border-radius: 25px;
   padding: 0 40px;
-  line-height: 47px;
   margin-bottom: $margin-lg;
   text-transform: uppercase;
 
