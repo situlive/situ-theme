@@ -1,5 +1,7 @@
-.mat-expansion-panel-header {
-  .mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+.mat-mdc-expansion-panel-header {
+  .mat-mdc-button-base:not(.mat-mdc-fab):not(.mat-mdc-mini-fab):not(
+      .mat-mdc-icon-button
+    ) {
     padding: 0 10px !important;
     line-height: 30px !important;
     margin-bottom: 0 !important;
@@ -7,34 +9,34 @@
   }
 }
 
-.mat-expansion-panel-header-title,
-.mat-expansion-panel-header-description,
-.mat-expansion-indicator {
+.mat-mdc-expansion-panel-header-title,
+.mat-mdc-expansion-panel-header-description,
+.mat-mdc-expansion-indicator {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.mat-expansion-panel {
+.mat-mdc-expansion-panel {
   color: $primary !important;
 }
 
-.mat-expansion-panel-header-title {
+.mat-mdc-expansion-panel-header-title {
   color: $primary !important;
 }
 
-.mat-accordion {
+.mat-mdc-accordion {
   display: block;
   margin-bottom: $margin-lg;
 }
 
-.mat-expansion-panel-header {
+.mat-mdc-expansion-panel-header {
   margin-bottom: $margin-lg;
   position: relative;
   height: auto !important;
   padding: $padding-lg !important;
 
-  &.mat-expanded {
+  &.mat-mdc-expanded {
     height: auto !important;
   }
 
@@ -49,17 +51,17 @@
   }
 }
 
-.mat-expansion-panel-body {
+.mat-mdc-expansion-panel-body {
   padding: 0 $padding-lg !important;
 }
 
-.mat-expansion-indicator {
+.mat-mdc-expansion-indicator {
   &:after {
     color: $primary;
   }
 }
 
-.mat-action-row {
+.mat-mdc-action-row {
   position: relative;
   border-top-style: none !important;
   justify-content: start !important;

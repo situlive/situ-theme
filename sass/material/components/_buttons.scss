@@ -1,4 +1,6 @@
-.mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+.mat-mdc-button-base:not(.mat-mdc-fab):not(.mat-mdc-mini-fab):not(
+    .mat-mdc-icon-button
+  ) {
   display: block;
   width: 100%;
 
@@ -25,7 +27,9 @@
   }
 }
 
-.mat-button-base:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+.mat-mdc-button-base:not(.mat-mdc-fab):not(.mat-mdc-mini-fab):not(
+    .mat-mdc-icon-button
+  ) {
   @include titleFont;
   border-radius: 25px;
   padding: 0 40px;
@@ -37,11 +41,11 @@
   @include make-buttons("white", white, $primary);
   @include make-buttons("jade", $jade, white);
 
-  .mat-reverse > .mat-button-wrapper {
+  .mat-mdc-reverse > .mat-mdc-button-wrapper {
     flex-direction: row-reverse;
   }
 
-  .mat-button-wrapper {
+  .mat-mdc-button-wrapper {
     @include fontSize($font-sizes);
     display: flex;
     align-items: center;
@@ -49,24 +53,24 @@
   }
 }
 
-.mat-fab,
-.mat-mini-fab {
+.mat-mdc-fab,
+.mat-mdc-mini-fab {
   //border-radius: 50%;
   display: flex;
 
-  .mat-button-wrapper {
+  .mat-mdc-button-wrapper {
     width: 100%;
     align-self: center;
   }
 }
 
-.btn-block:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+.btn-block:not(.mat-mdc-fab):not(.mat-mdc-mini-fab):not(.mat-mdc-icon-button) {
   display: block;
 
-  .mat-button-wrapper {
+  .mat-mdc-button-wrapper {
     position: relative;
 
-    .mat-icon {
+    .mat-mdc-icon {
       top: 13px; // Height of button - height of icon / 2
       left: -25px;
       position: absolute;
