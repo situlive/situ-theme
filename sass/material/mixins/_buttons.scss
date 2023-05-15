@@ -1,11 +1,11 @@
 @mixin make-buttons($name, $primaryColor, $secondaryColor) {
-  &.mat-#{$name} {
+  &.mat-mdc-#{$name} {
     background-color: $primaryColor;
     border: 2px solid $primaryColor;
     color: $secondaryColor;
 
-    .mat-progress-spinner circle,
-    .mat-spinner circle {
+    .mat-mdc-progress-spinner circle,
+    .mat-mdc-spinner circle {
       stroke: $secondaryColor;
     }
 
@@ -16,8 +16,8 @@
       border: 2px solid rgba($primaryColor, 0.1);
       color: rgba($secondaryColor, 0.65);
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: rgba($secondaryColor, 0.65);
       }
     }
@@ -30,20 +30,20 @@
       background-color: $secondaryColor;
       color: $primaryColor;
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: $primaryColor;
       }
     }
   }
 
-  &.mat-inverse-#{$name} {
+  &.mat-mdc-inverse-#{$name} {
     background-color: $secondaryColor;
     border: 2px solid $primaryColor;
     color: $primaryColor;
 
-    .mat-progress-spinner circle,
-    .mat-spinner circle {
+    .mat-mdc-progress-spinner circle,
+    .mat-mdc-spinner circle {
       stroke: $primaryColor;
     }
 
@@ -54,8 +54,8 @@
       border: 2px solid rgba($primaryColor, 0.1);
       color: rgba($primaryColor, 0.65);
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: rgba($primaryColor, 0.65);
       }
     }
@@ -69,20 +69,20 @@
       border: 2px solid $secondaryColor;
       color: $secondaryColor;
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: $secondaryColor;
       }
     }
   }
 
-  &.mat-transparent-#{$name} {
+  &.mat-mdc-transparent-#{$name} {
     background-color: transparent;
     border: 2px solid $primaryColor;
     color: $primaryColor;
 
-    .mat-progress-spinner circle,
-    .mat-spinner circle {
+    .mat-mdc-progress-spinner circle,
+    .mat-mdc-spinner circle {
       stroke: $primaryColor;
     }
 
@@ -91,8 +91,8 @@
       border: 2px solid $primaryColor;
       color: $primaryColor;
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: rgba($primaryColor, 0.65);
       }
     }
@@ -106,20 +106,20 @@
       border: 2px solid $primaryColor;
       color: $secondaryColor;
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: $secondaryColor;
       }
     }
   }
 
-  &.mat-inverse-transparent-#{$name} {
+  &.mat-mdc-inverse-transparent-#{$name} {
     background-color: $primaryColor;
     border: 2px solid $primaryColor;
     color: $secondaryColor;
 
-    .mat-progress-spinner circle,
-    .mat-spinner circle {
+    .mat-mdc-progress-spinner circle,
+    .mat-mdc-spinner circle {
       stroke: $secondaryColor;
     }
 
@@ -128,8 +128,8 @@
       border: 2px solid $secondaryColor;
       color: $secondaryColor;
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: rgba($secondaryColor, 0.65);
       }
     }
@@ -143,8 +143,8 @@
       border: 2px solid $primaryColor;
       color: $primaryColor;
 
-      .mat-progress-spinner circle,
-      .mat-spinner circle {
+      .mat-mdc-progress-spinner circle,
+      .mat-mdc-spinner circle {
         stroke: $primaryColor;
       }
     }

@@ -1,28 +1,28 @@
-.mat-snack-bar-container {
+.mat-mdc-snack-bar-container {
   display: flex !important;
   margin: 0 !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   width: 100vw !important;
   max-width: 100vw !important;
-  height: $header-height;
+  height: 100px;
   align-items: center;
   justify-content: center;
 
-  &.mat-warning {
+  &.mat-mdc-warning {
     background-color: $orange;
   }
 
-  &.mat-error,
-  &.mat-danger {
+  &.mat-mdc-error,
+  &.mat-mdc-danger {
     background-color: $warm-red;
   }
 
-  &.mat-success {
+  &.mat-mdc-success {
     background-color: green;
   }
 
-  &.mat-info {
+  &.mat-mdc-info {
     background-color: $violet;
   }
 }

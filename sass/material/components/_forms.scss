@@ -1,5 +1,8 @@
 .form-group {
   width: 100%;
   margin-bottom: $margin-lg;
-  font-size: 14px !important;
+}
+
+.mat-mdc-form-field {
+  @include bodyFont;
 }

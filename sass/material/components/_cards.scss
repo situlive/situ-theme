@@ -1,20 +1,21 @@
-.mat-card {
-  @include bodyLight;
+.mat-mdc-card {
+  @include bodyFont;
   color: $primary !important;
+  background-color: $white;
   padding: $margin-xxl;
 }
 
-.mat-card-content,
-.mat-card-subtitle {
+.mat-mdc-card-content,
+.mat-mdc-card-subtitle {
   width: 100%;
-  @include fontSize($font-sizes);
+  @include fontSize($font-sizes, true);
 }
 
-.mat-card-header {
+.mat-mdc-card-header {
   flex-direction: column;
   margin-bottom: $margin-xxl;
 }
 
-.mat-card-header-text {
+.mat-mdc-card-header-text {
   margin: 0 0;
 }
