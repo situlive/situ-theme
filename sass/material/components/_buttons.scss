@@ -30,7 +30,6 @@
 .mat-mdc-button-base:not(.mat-mdc-fab):not(.mat-mdc-mini-fab):not(
     .mat-mdc-icon-button
   ) {
-  @include titleFont;
   border-radius: 25px;
   padding: 0 40px;
   margin-bottom: $margin-lg;
@@ -45,7 +44,7 @@
   }
 
   .mat-mdc-button-wrapper {
-    @include fontSize($font-sizes);
+    font-size: $font-size;
     display: flex;
     align-items: center;
     justify-content: center;

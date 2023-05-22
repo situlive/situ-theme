@@ -22,27 +22,3 @@
 @each $name, $colour in $light-colours {
   @include createSection($name, $colour, $primary);
 }
-
-@include createGradientSection(
-  "gradient-bright-blue",
-  $white,
-  110deg,
-  $jade,
-  $bright-blue
-);
-@include createGradientSection(
-  "gradient-cherry",
-  $white,
-  110deg,
-  $jade,
-  $bright-blue,
-  $cherry
-);
-@include createGradientSection(
-  "gradient-cherry--light",
-  $white,
-  110deg,
-  $jade--30,
-  $bright-blue--30,
-  $cherry--30
-);

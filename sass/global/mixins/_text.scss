@@ -8,107 +8,58 @@
   }
 }
 
-@mixin bodyFont($i: false /* flag for`!important` */) {
-  $important: if($i, "!important", "");
-  font-family: "SituLiveLight" #{$important};
-  font-weight: normal #{$important};
-}
-
-@mixin boldBodyFont($i: false /* flag for`!important` */) {
-  $important: if($i, "!important", "");
-  font-family: "SituLiveBold" #{$important};
-  font-weight: bold #{$important};
-}
-
-@mixin titleFont($i: false /* flag for`!important` */) {
-  $important: if($i, "!important", "");
-  font-family: "EuclidTriangleSemiBold" #{$important};
-}
-
-@mixin body {
-  @include bodyFont;
-  @include fontSize($font-sizes);
-  @include lineHeight($font-lineheight);
-  font-weight: 400;
-}
-
 @mixin headerOne() {
-  @include titleFont;
-  @include fontSize($h1-sizes);
-  @include lineHeight($h1-lineheight);
+  @include lineHeight($h1-lineheights);
+  font-size: $h1-size;
+  font-weight: 800;
 
   margin-top: 0;
   margin-bottom: 0;
 }
 
 @mixin headerTwo() {
-  @include titleFont;
-  @include fontSize($h2-sizes);
-  @include lineHeight($h2-lineheight);
+  @include lineHeight($h2-lineheights);
+  font-size: $h2-size;
+  font-weight: 800;
 
   margin-top: 0;
   margin-bottom: $margin-lg;
 }
 
 @mixin headerThree {
-  @include titleFont;
-  @include fontSize($h3-sizes);
-  @include lineHeight($h3-lineheight);
+  @include lineHeight($h3-lineheights);
+  font-size: $h3-size;
+  font-weight: 800;
 
   margin-top: 0;
   margin-bottom: $margin-lg;
 }
 
 @mixin headerFour {
-  @include boldBodyFont;
-  @include fontSize($h4-sizes);
-  @include lineHeight($h4-lineheight);
+  @include lineHeight($h4-lineheights);
+  font-size: $h4-size;
+  font-weight: 700;
 
   margin-top: 0;
   margin-bottom: $margin-lg;
 }
 
 @mixin headerFive {
-  @include boldBodyFont;
-  @include fontSize($h5-sizes);
-  @include lineHeight($h5-lineheight);
+  @include lineHeight($h5-lineheights);
+  font-size: $h5-size;
+  font-weight: 700;
 
   margin-top: 0;
   margin-bottom: $margin-lg;
 }
 
 @mixin headerSix {
-  @include boldBodyFont;
-  @include fontSize($h6-sizes);
-  @include lineHeight($h6-lineheight);
+  @include lineHeight($h6-lineheights);
+  font-size: $h6-size;
+  font-weight: 700;
 
   margin-top: 0;
   margin-bottom: $margin-lg;
-}
-
-@mixin fontSize($sizes, $i: false /* flag for`!important` */) {
-  $important: if($i, "!important", "");
-  font-size: map-get($sizes, xs) #{$important};
-
-  @include media-breakpoint-up(xs) {
-    font-size: map-get($sizes, xs) #{$important};
-  }
-
-  @include media-breakpoint-up(sm) {
-    font-size: map-get($sizes, sm) #{$important};
-  }
-
-  @include media-breakpoint-up(md) {
-    font-size: map-get($sizes, md) #{$important};
-  }
-
-  @include media-breakpoint-up(lg) {
-    font-size: map-get($sizes, lg) #{$important};
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: map-get($sizes, xl) #{$important};
-  }
 }
 
 @mixin lineHeight($sizes, $i: false /* flag for`!important` */) {
@@ -143,40 +94,21 @@
 }
 
 @mixin situ-text() {
-  @font-face {
-    font-family: "SituLiveLight";
-    src: url("#{$situ-font-path}/situlive-light.woff2") format("woff2"),
-      url("#{$situ-font-path}/situlive-light.woff") format("woff");
-    font-display: swap;
-    font-weight: normal;
-    font-style: normal;
-  }
+  @import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:400,700,800");
 
-  @font-face {
-    font-family: "SituLiveBold";
-    src: url("#{$situ-font-path}/situlive-bold.woff2") format("woff2"),
-      url("#{$situ-font-path}/situlive-bold.woff") format("woff");
-    font-display: swap;
-    font-weight: normal;
-    font-style: normal;
-  }
+  html {
+    font-size: 100% !important; /* 16px */
 
-  @font-face {
-    font-family: "EuclidTriangleSemiBold";
-    src: url("#{$situ-font-path}/euclidtriangle-semibold.woff2") format("woff2"),
-      url("#{$situ-font-path}/euclidtriangle-semibold.woff") format("woff");
-    font-display: swap;
-    font-weight: 600;
-    font-style: normal;
+    @include media-breakpoint-up(lg) {
+      font-size: 112.5% !important; /* 18px */
+    }
   }
 
   body {
-    @include body;
-  }
-
-  h1,
-  .h1 {
-    line-height: 1;
+    font-family: "Plus Jakarta Sans", sans-serif #{$important};
+    font-size: $font-size;
+    font-weight: 400;
+    line-height: 1.5;
   }
 
   h1,
@@ -210,42 +142,31 @@
   }
 
   .p {
-    @include body;
+    @include lineHeight($font-lineheights);
+    font-weight: 400;
   }
 
   label {
-    @include bodyFont;
     margin-bottom: $margin-xs;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: $small-size;
   }
 
   ul {
-    @include titleFont;
+    @include lineHeight($font-lineheights);
   }
 
   input {
-    @include bodyFont;
+    @include lineHeight($font-lineheights);
   }
 
   p {
+    @include lineHeight($font-lineheights);
     margin-bottom: $margin-lg;
   }
 
   .small {
-    @include fontSize($small-sizes);
-    @include lineHeight($small-lineheight);
-  }
-
-  .title-text {
-    @include titleFont(1);
-  }
-
-  .body-text--light {
-    @include bodyFont(1);
-  }
-
-  .body-text--bold {
-    @include boldBodyFont(1);
+    font-size: $small-size;
+    @include lineHeight($small-lineheights);
   }
 }

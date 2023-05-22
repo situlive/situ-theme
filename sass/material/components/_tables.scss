@@ -28,7 +28,6 @@
   .mat-mdc-sort-header,
   .mat-mdc-header-cell,
   .mat-mdc-cell {
-    @include bodyFont;
     font-size: 16px !important;
     font-weight: bold;
     padding-left: $padding-md !important;
@@ -90,7 +89,7 @@ td.mat-mdc-cell,
 .mat-mdc-sort-header,
 .mat-mdc-header-cell,
 .mat-mdc-cell {
-  @include fontSize($font-sizes, true);
+  font-size: $font-size !important;
   color: $primary !important;
   padding-left: $padding-xxl !important;
   width: 1px;
@@ -106,14 +105,9 @@ td.mat-mdc-cell,
 }
 
 .mat-mdc-header-cell {
-  @include bodyFont;
   .mat-mdc-checkbox-layout {
     margin-bottom: 0;
   }
-}
-
-.mat-mdc-cell {
-  @include titleFont;
 }
 
 .table-row-count {
@@ -123,8 +117,7 @@ td.mat-mdc-cell,
   align-items: center;
 
   .btn-link {
-    @include bodyFont;
-    @include fontSize($font-sizes);
+    font-size: $font-size;
     color: $primary !important;
     padding-left: $padding-sm !important;
     padding-right: $padding-sm !important;

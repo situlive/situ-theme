@@ -1,4 +1,3 @@
 .mat-mdc-tab-label-content {
-  @include fontSize($h5-sizes);
-  @include titleFont;
+  font-size: $h5-size;
 }

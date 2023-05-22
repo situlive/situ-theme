@@ -1,114 +1,74 @@
-$situ-font-path: "../../../fonts" !default;
-$h1-sizes: (
-  xs: 33px,
-  sm: 42px,
-  md: 46px,
-  lg: 50px,
-  xl: 55px,
+$h1-size: 3.052rem !default;
+$h2-size: 2.441rem !default;
+$h3-sizes: 1.953rem !default;
+$h4-size: 1.563rem !default;
+$h5-size: 1.25rem !default;
+$h6-size: 1rem !default;
+$font-size: 1rem !default;
+$small-size: 0.8rem !default;
+
+$h1-lineheights: (
+  xs: 63.48px,
+  sm: 63.48px,
+  md: 63.48px,
+  lg: 71.41px,
+  xl: 71.41px,
 ) !default;
-$h2-sizes: (
-  xs: 22px,
-  sm: 32px,
-  md: 46px,
-  lg: 40px,
-  xl: 45px,
+
+$h2-lineheights: (
+  xs: 50.78px,
+  sm: 50.78px,
+  md: 50.78px,
+  lg: 57.14px,
+  xl: 57.14px,
 ) !default;
-$h3-sizes: (
-  xs: 20px,
-  sm: 24px,
-  md: 28px,
-  lg: 32px,
-  xl: 37px,
+
+$h3-lineheights: (
+  xs: 40.63px,
+  sm: 40.63px,
+  md: 40.63px,
+  lg: 45.71px,
+  xl: 45.71px,
 ) !default;
-$h4-sizes: (
-  xs: 18px,
-  sm: 22px,
-  md: 22px,
-  lg: 24px,
-  xl: 26px,
-);
-$h5-sizes: (
-  xs: 16px,
-  sm: 20px,
-  md: 20px,
-  lg: 22px,
-  xl: 24px,
+
+$h4-lineheights: (
+  xs: 32.5px,
+  sm: 32.5px,
+  md: 32.5px,
+  lg: 36.57px,
+  xl: 36.57px,
 ) !default;
-$h6-sizes: (
-  xs: 16px,
-  sm: 18px,
-  md: 18px,
-  lg: 18px,
-  xl: 20px,
+
+$h5-lineheights: (
+  xs: 26px,
+  sm: 26px,
+  md: 26px,
+  lg: 29.25px,
+  xl: 29.25px,
 ) !default;
-$font-sizes: (
-  xs: 16px,
-  sm: 16px,
-  md: 16px,
-  lg: 18px,
-  xl: 18px,
-) !default;
-$small-sizes: (
-  xs: 14px,
-  sm: 14px,
-  md: 14px,
-  lg: 16px,
-  xl: 16px,
-) !default;
-$h1-lineheight: (
-  xs: 43px,
-  sm: 50px,
-  md: 56px,
-  lg: 60px,
-  xl: 65px,
-) !default;
-$h2-lineheight: (
-  xs: 32px,
-  sm: 42px,
-  md: 46px,
-  lg: 50px,
-  xl: 55px,
-) !default;
-$h3-lineheight: (
-  xs: 30px,
-  sm: 34px,
-  md: 38px,
-  lg: 42px,
-  xl: 47px,
-) !default;
-$h4-lineheight: (
+
+$h6-lineheights: (
   xs: 24px,
-  sm: 29px,
-  md: 29px,
-  lg: 31px,
-  xl: 33px,
-);
-$h5-lineheight: (
-  xs: 22px,
-  sm: 27px,
-  md: 27px,
-  lg: 29px,
-  xl: 31px,
+  sm: 24px,
+  md: 24px,
+  lg: 23.4px,
+  xl: 23.4px,
 ) !default;
-$h6-lineheight: (
-  xs: 22px,
-  sm: 25px,
-  md: 25px,
-  lg: 25px,
+
+$font-lineheights: (
+  xs: 24px,
+  sm: 24px,
+  md: 24px,
+  lg: 27px,
   xl: 27px,
 ) !default;
-$font-lineheight: (
-  xs: 22px,
-  sm: 23px,
-  md: 23px,
-  lg: 25px,
-  xl: 25px,
+
+$small-lineheights: (
+  xs: 19.2px,
+  sm: 19.2px,
+  md: 19.2px,
+  lg: 21.6px,
+  xl: 21.6px,
 ) !default;
-$small-lineheight: (
-  xs: 20px,
-  sm: 20px,
-  md: 20px,
-  lg: 22px,
-  xl: 22px,
-) !default;
-$button-sizes: $font-sizes !default;
+
+$button-size: $font-size !default;
