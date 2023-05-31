@@ -1,6 +1,6 @@
-@import "./global/variables";
-@use "@angular/material" as mat;
+@import "@angular/material";
 
+@import "./global/variables";
 @import "bootstrap-scss/functions";
 @import "bootstrap-scss/variables";
 @import "bootstrap-scss/mixins";
@@ -13,9 +13,9 @@
 @import "./global/components";
 @import "./material";
 
-@include mat.core();
+@include core();
 
-@mixin core() {
+@mixin situCore() {
   @include create-theme;
   @include situ-text;
 }

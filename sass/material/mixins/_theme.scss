@@ -1,11 +1,9 @@
-@use "@angular/material" as mat;
-
 @mixin create-theme() {
-  $sxp-primary: mat.define-palette($sxp-blue-palette, 800, 100, 900);
-  $sxp-accent: mat.define-palette($sxp-jade-palette, 600, 100, 900);
-  $sxp-warn: mat.define-palette($sxp-red-palette, 300, 100, 700);
+  $sxp-primary: define-palette($sxp-blue-palette, 800, 100, 900);
+  $sxp-accent: define-palette($sxp-jade-palette, 600, 100, 900);
+  $sxp-warn: define-palette($sxp-red-palette, 300, 100, 700);
 
-  $sxp-theme: mat.define-light-theme($sxp-primary, $sxp-accent, $sxp-warn);
+  $sxp-theme: define-light-theme($sxp-primary, $sxp-accent, $sxp-warn);
 
-  @include mat.all-component-themes($my-theme);
+  @include all-component-themes($sxp-theme);
 }
