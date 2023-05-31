@@ -1,4 +1,5 @@
 @import "./global/variables";
+@use "@angular/material" as mat;
 
 @import "bootstrap-scss/functions";
 @import "bootstrap-scss/variables";
@@ -12,7 +13,6 @@
 @import "./global/components";
 @import "./material";
 
-@use "@angular/material" as mat;
 @include mat.core();
 
 @mixin core() {
