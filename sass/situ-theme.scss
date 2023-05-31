@@ -12,6 +12,7 @@
 @import "./global/components";
 @import "./material";
 
+@use "@angular/material" as mat;
 @include mat.core();
 
 @mixin core() {
