@@ -2,13 +2,23 @@
   width: 100%;
   margin-bottom: $margin-lg;
 }
-.mat-mdc-form-field-icon-prefix,
-.mat-mdc-form-field-icon-suffix {
+.mat-mdc-form-field-icon-prefix
+  .mat-mdc-button-base:not(.mat-mdc-fab):not(.mat-mdc-mini-fab):not(
+    .mat-mdc-icon-button
+  ),
+.mat-mdc-form-field-icon-suffix
+  .mat-mdc-button-base:not(.mat-mdc-fab):not(.mat-mdc-mini-fab):not(
+    .mat-mdc-icon-button
+  ) {
   border-radius: 0 !important;
   margin-bottom: 0;
   height: 59px;
   border-top-width: 0;
   border-bottom-width: 0;
+
+  // For .mat-icon
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .mat-mdc-form-field-icon-prefix
