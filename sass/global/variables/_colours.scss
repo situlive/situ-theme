@@ -26,18 +26,20 @@ $icterine: #f7ff56 !default;
 
 // Pallette
 $primary: $blue-100 !default;
-$accent: $green100 !default;
+$accent: $green-100 !default;
 
 $black: #000000 !default;
 $white: #ffffff !default;
 $success: $green-sheen !default;
 $warning: $bittersweet !default;
 $error: $spanish-crimson !default;
+$info: $moonstone-blue !default;
 
 $colours: (
   "blue-100": $blue-100,
   "blue-070": $blue-070,
   "blue-050": $blue-050,
+  "blue-030": $blue-030,
   "blue-010": $blue-010,
   "blue-005": $blue-005,
   "blue-002": $blue-002,
@@ -48,10 +50,10 @@ $colours: (
   "green-030": $green-030,
   "green-010": $green-010,
 
-  "tea-green": $tea-green,
-  "azureish-white": $azureish-white,
   "green-sheen": $green-sheen,
   "moonstone-blue": $moonstone-blue,
+  "tea-green": $tea-green,
+  "azureish-white": $azureish-white,
 
   "spanish-crimson": $spanish-crimson,
   "bittersweet": $bittersweet,
@@ -65,12 +67,14 @@ $colours: (
   "success": $success,
   "warning": $warning,
   "error": $error,
+  "info": $info,
 );
 
 $light-colours: (
   // "blue-100": $blue-100,
   // "blue-070": $blue-070,
   "blue-050": $blue-050,
+  "blue-030": $blue-030,
   "blue-010": $blue-010,
   "blue-005": $blue-005,
   "blue-002": $blue-002,
@@ -81,10 +85,11 @@ $light-colours: (
   "green-030": $green-030,
   "green-010": $green-010,
 
-  "tea-green": $tea-green,
-  "azureish-white": $azureish-white,
   // "green-sheen": $green-sheen,
   // "moonstone-blue": $moonstone-blue,
+  "tea-green": $tea-green,
+  "azureish-white": $azureish-white,
+
   // "spanish-crimson": $spanish-crimson,
   // "bittersweet": $bittersweet,
   "icterine": $icterine,
@@ -96,12 +101,14 @@ $light-colours: (
   // "success": $success,
   // "warning": $warning,
   // "error": $error,
+  // "info": $info,
 );
 
 $dark-colours: (
   "blue-100": $blue-100,
   "blue-070": $blue-070,
   // "blue-050": $blue-050,
+  // "blue-030": $blue-030,
   // "blue-010": $blue-010,
   // "blue-005": $blue-005,
   // "blue-002": $blue-002,
@@ -110,11 +117,10 @@ $dark-colours: (
   // "green-050": $green-050,
   // "green-030": $green-030,
   // "green-010": $green-010,
-  // "tea-green": $tea-green,
-  // "azureish-white": $azureish-white,
   "green-sheen": $green-sheen,
   "moonstone-blue": $moonstone-blue,
-
+  // "tea-green": $tea-green,
+  // "azureish-white": $azureish-white,
   "spanish-crimson": $spanish-crimson,
   "bittersweet": $bittersweet,
   // "icterine": $icterine,
@@ -126,4 +132,5 @@ $dark-colours: (
   "success": $success,
   "warning": $warning,
   "error": $error,
+  "info": $info,
 );

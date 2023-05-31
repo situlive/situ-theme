@@ -37,7 +37,7 @@
 
   @include make-buttons("primary", $primary, white);
   @include make-buttons("white", white, $primary);
-  @include make-buttons("jade", $jade, white);
+  @include make-buttons("green", $green-100, $primary);
 
   .mat-mdc-reverse > .mat-mdc-button-wrapper {
     flex-direction: row-reverse;
