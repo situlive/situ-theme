@@ -16,9 +16,10 @@
   border-top-width: 0;
   border-bottom-width: 0;
 
-  // For .mat-icon
-  margin-right: 0;
-  margin-left: 0;
+  .mat-icon {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .mat-mdc-form-field-icon-prefix
